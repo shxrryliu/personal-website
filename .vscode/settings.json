@@ -1,0 +1,6 @@
+{
+    // "git.ignoreLimitWarning": true,
+    "files.exclude": {
+        "../**": true           // Exclude all files and folders in the parent directory
+    }
+}
