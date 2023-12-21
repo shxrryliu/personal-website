@@ -1,6 +1,15 @@
 {
-    // "git.ignoreLimitWarning": true,
-    "files.exclude": {
-        "../**": true           // exclude all files and folders in the parent directory
-    }
+    // // "git.ignoreLimitWarning": true,
+    // "files.exclude": {
+    //     "../**": true  
+    // },
+    "tailwindCSS.includeLanguages": {
+        "javascript": "javascript",
+        "css": "css"
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "css.validate": false,
+    "editor.inlineSuggest.enabled": true
 }
