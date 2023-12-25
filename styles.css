@@ -4,4 +4,14 @@
 
 body {
     font-family: 'Inter var', sans-serif;
+    animation: fadeIn 2s ease-out forwards;
   }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
