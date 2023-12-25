@@ -8,10 +8,10 @@ const navOptions = [
         title:'projects',
         link:'/projects'
     },
-    {
-        title:'writing',
-        link:'/writing',
-    },
+    // {
+    //     title:'writing',
+    //     link:'/writing',
+    // },
     {
         title:'contact',
         link:'/contact'
@@ -23,7 +23,7 @@ export default function Header() {
       <header className="w-full bg-gray-100 py-4 px-6 fixed top-0 z-10 opacity-75">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
             {/* upper left corner */}
-            <a href="/" className="group relative inline-block text-xl font-bold text-gray-800">
+            <a href="/" className="group relative inline-block text-xl font-bold text-gray-800 hover:text-black">
             <span className="inline-block">s</span>
             <span className="absolute left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">herry</span>
             <span className="inline-block transition-all duration-500 ease-in-out transform group-hover:translate-x-14 pl-0">liu</span>

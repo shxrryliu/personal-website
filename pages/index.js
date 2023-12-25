@@ -18,7 +18,7 @@ const lifeUpdates = {
           href="https://canvas.harvard.edu/courses/123847/assignments/syllabus" 
           className="group relative text-red-700 hover:text-red-900 transition duration-300"
         >
-          Technology & Privacy class
+          technology & privacy class
           {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span> */}
         </a>
         .
@@ -113,16 +113,16 @@ export default function Home() {
               <h2 className="text-xl text-gray-800">{workUpdates.title}</h2>
               <div className="sm:mt-8">
                 <p className="text-lg text-gray-800 sm:ml-10 sm:block hidden">currently</p>
-                <p className="text-lg text-gray-800 my-2 sm:mt-12 sm:ml-10 sm:block hidden">previously</p>
+                <p className="text-lg text-gray-800 md:mt-12 sm:mt-16 sm:ml-10 sm:block hidden">previously</p>
               </div>
             </div>
             <div className="sm:w-2/3">
-            <p className="block sm:hidden text-lg text-gray-800 my-1">currently</p>
+            <p className="block sm:hidden text-lg text-gray-800 pt-3">currently</p>
               <div className="text-gray-700 my-2 sm:mt-10">
                 {workUpdates.current}
               </div>
-              <p className="block sm:hidden text-lg text-gray-800 my-1">previously</p>
-              <div className="text-gray-700 my-4 sm:mt-4">
+              <p className="block sm:hidden text-lg text-gray-800 pt-3">previously</p>
+              <div className="text-gray-700 my-2 sm:mt-4">
                 {workUpdates.previous}
               </div>
             </div>
