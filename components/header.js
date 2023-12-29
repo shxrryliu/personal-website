@@ -34,12 +34,13 @@ export default function Header() {
           <nav>
             <ul className="flex space-x-3 sm:space-x-8">
             {navOptions.map((option) => (
-                <li><a
+                <li key={option.title}>
+                  <a
                     href={option.link}
                     className="group relative text-gray-800 hover:text-red-800 transition duration-300">
                     {option.title}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span>
-                    </a>
+                  </a>
                 </li>
             ))}
             </ul>

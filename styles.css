@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Inter var', sans-serif;
-    animation: fadeIn 2s ease-out forwards;
+    animation: fadeIn 1.5s ease-out forwards;
   }
 
 @keyframes fadeIn {

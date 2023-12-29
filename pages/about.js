@@ -18,9 +18,10 @@ export default function Home() {
             <p className='text-xs text-center pt-2 pb-10'>[she/they]</p>
 
             {/* quick intro */}
-            <div className='flex sm:flex-row flex-col items-center max-w-3xl'>
+            <div className='flex sm:flex-row flex-col items-center max-w-3xl p-4 md:mx-auto mx-3'>
                 <div className='sm:w-1/2 med:mr-0 sm:mr-8 sm:pl-1'>
-                    <img src='/me4.jpg' alt='me again' className='w-full h-72 bg-gray-200 rounded-lg object-cover' />
+                    <img src='/me4.jpg' alt='me again' className='w-full h-72 bg-gray-200 rounded-lg object-cover
+                        hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden' />
                     <p className="text-center text-xs mt-2">me on film.</p>
                 </div>
                 <div className='sm:w-1/2 my-6 sm:my-auto'>
@@ -42,9 +43,9 @@ export default function Home() {
             </div>
 
             {/* values section */}
-            <div className='text-left max-w-3xl'>
+            <div className='text-left max-w-3xl p-4 md:mx-auto mx-3'>
                 <p className='text-xl font-medium pb-4 sm:pb-8'>if you’re also interested in ethical tech, let’s collab!</p>
-                <p className='text-med pb-4'>i believe that innovation is exciting for the sake of innovation, but tech is always situated in its social context.
+                <p className='text-med pb-4'>i believe that innovation is exciting for its own sake, but tech is always situated in its social context.
                     as designers/developers, it is our responsibility to advance the interest of the underprivileged and minimize unfair exploitation.
                 </p>
                 <p className='text-med'>as a quantitative social scientist, i think that data should be leveraged to hold those in power accountable.
@@ -58,12 +59,13 @@ export default function Home() {
             </div>
 
             {/* side quests */}
-            <div className='max-w-3xl w-full'>
+            <div className='max-w-3xl w-full p-4 md:mx-auto mx-3'>
                 <p className='text-xl pb-4 sm:pb-8 text-left'>a few side quests from my life</p>
-                <div className='grid sm:grid-cols-3 grid-cols-2 gap-10 mb-8 mx-3'>
+                <div className='grid md:grid-cols-3 lg:grid-cols-3 grid-cols-2 gap-10 mb-8 mx-3'>
                     {sideQuests.map((quest, index) => (
                         <div key={index}>
-                            <img src={quest.imgPath} alt={quest.description} className='w-full rounded-lg h-52 bg-gray-200 object-cover' />
+                            <img src={quest.imgPath} alt={quest.description} className='w-full rounded-lg sm:h-52 h-28 bg-gray-200 object-cover
+                                hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden' />
                             <p className='text-center text-sm mt-2'>{quest.description}</p>
                         </div>
                     ))}
@@ -71,7 +73,7 @@ export default function Home() {
             </div>
 
             {/* other social media places */}
-            <div className='flex flex-col max-w-3xl items-center justify-center mt-10'>
+            <div className='flex flex-col max-w-3xl items-center justify-center mt-8 p-4 md:mx-auto mx-3'>
                 <p className='text-med my-6'>even more places to find me (not work):</p>
                 <div className="flex space-x-16 mb-12">
                     <a href="https://www.goodreads.com/user/show/50509124-sherry-liu" aria-label="Github" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
