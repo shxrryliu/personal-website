@@ -1,4 +1,8 @@
 import '../tailwind.config'
+import Link from 'next/link';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { ProjectCard , featuredProjects } from '../components/projectcard';
 import { FaGithub, FaInstagram, FaLinkedin , FaRegEnvelope} from 'react-icons/fa';
 
 
@@ -40,29 +44,35 @@ const lifeUpdates = {
       </p>
     ),
   };
-  
-  
-const featuredProjects = [
-    {
-      title: "project one",
-      description: "description.",
-      imageUrl: "/project-one.jpg", // Replace with your image path
-      link: "#", // Replace with your project link if available
-    },
-    {
-      title: "project two",
-      description: "description.",
-      imageUrl: "/project-two.jpg", // Replace with your image path
-      link: "#", // Replace with your project link if available
-    },
-    {
-      title: "project three",
-      description: "description.",
-      imageUrl: "/project-two.jpg", // Replace with your image path
-      link: "#", // Replace with your project link if available
-    },  ];
 
 export default function Home() {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    // Function to handle the scroll
+    const handleScrollToElement = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    // Trigger the scroll when the component mounts
+    handleScrollToElement();
+
+    // Also, set up the scroll when the route changes
+    router.events.on('routeChangeComplete', handleScrollToElement);
+
+    // Clean up
+    return () => {
+      router.events.off('routeChangeComplete', handleScrollToElement);
+    };
+  }, [router]);
+  
     return (
       <div className="flex flex-col items-center justify-center min-h-screen p-4">
 
@@ -152,10 +162,10 @@ export default function Home() {
 
             {/* more link */}
             <div className="text-right mt-4">
-              <a href="#" className="group relative text-gray-700 duration-300 ease-in-out hover:text-red-700 hover:drop-shadow-md">
+              <Link href="/projects" passHref className="group relative text-gray-700 duration-300 ease-in-out hover:text-red-700 hover:drop-shadow-md">
                 more →
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span>
-                </a>
+                </Link>
             </div>
           </div>
 
