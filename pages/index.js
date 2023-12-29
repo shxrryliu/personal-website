@@ -67,11 +67,11 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen p-4">
 
         {/* image */}
-        <img src="/me2.jpg" alt="me!" className="rounded-full w-32 h-32 object-cover mr-1 my-12 mt-28 scale-125"/>
+        <img src="/me2.jpg" alt="me!" className="rounded-full w-32 h-32 object-cover mr-1 my-12 mt-32 scale-1"/>
 
         {/* introduction */}
-        <h2 className="text-2xl font-bold text-center">Hey! I'm Sherry.</h2>
-        <p className="text-2xl font-bold text-center mt-2">A quantitative social scientist from Las Vegas.</p>
+        <h2 className="text-2xl font-semibold text-center">Hey! I'm Sherry.</h2>
+        <p className="text-2xl font-semibold text-center mt-2">A quantitative social scientist from Las Vegas.</p>
         <p className="text-center mt-4 mb-8 text-gray-800">I’m passionate about socially-minded tech development.</p>
 
         {/* social icons! */}
@@ -163,7 +163,7 @@ export default function Home() {
           <hr className="border-t border-gray-700 w-1/2 sm:my-12 my-4 mx-auto" />
 
           {/* contact me! */}
-          <div>
+          <div id='contact' className='mb-4'>
             <h2 className="text-xl text-gray-800 my-6">let's be friends!</h2>
 
             {/* them buttons */}

@@ -14,7 +14,7 @@ const navOptions = [
     // },
     {
         title:'contact',
-        link:'/contact'
+        link:'/#contact'
     },
 ]
 
