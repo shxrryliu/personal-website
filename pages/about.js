@@ -1,5 +1,5 @@
 import '../tailwind.config'
-import { FaInstagram, FaGoodreads } from 'react-icons/fa';
+import { FaInstagram, FaGoodreads, FaSpotify } from 'react-icons/fa';
 
 const sideQuests = [
     { imgPath: '../sidequests/half.jpg', description: 'ran a half marathon' },
@@ -73,9 +73,9 @@ export default function Home() {
             </div>
 
             {/* other social media places */}
-            <div className='flex flex-col max-w-3xl items-center justify-center mt-8 p-4 md:mx-auto mx-3'>
-                <p className='text-med my-6 text-gray-800'>even more places to find me (not work):</p>
-                <div className="flex space-x-16 mb-12">
+            <div className='flex flex-col max-w-3xl items-center justify-center p-4 md:mx-auto mx-3'>
+                <p className='text-med my-6 text-gray-800 text-center'>even more places to find me (not work):</p>
+                <div className="flex space-x-16">
                     <a href="https://www.goodreads.com/user/show/50509124-sherry-liu" aria-label="Github" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
             transition duration-300 ease-in-out transform hover:-translate-y-1">
                         <FaGoodreads size={30} />
@@ -83,6 +83,10 @@ export default function Home() {
                     <a href="https://www.instagram.com/sherryliuser/" aria-label="Instagram" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
             transition duration-300 ease-in-out transform hover:-translate-y-1">
                         <FaInstagram size={30} />
+                    </a>
+                    <a href="https://open.spotify.com/user/shxrryliu" aria-label="Spotify" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
+            transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <FaSpotify size={30} />
                     </a>
                 </div>
             </div>
