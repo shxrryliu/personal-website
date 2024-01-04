@@ -14,8 +14,8 @@ const sideQuests = [
 export default function Home() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-6">
-            <h2 className="text-3xl font-semibold text-center mt-36">I'm Sherry.</h2>
-            <p className='text-xs text-center pt-2 pb-10'>[she/they]</p>
+            <h2 className="text-3xl font-semibold text-center mt-32 sm:mt-36">I'm Sherry.</h2>
+            <p className='text-xs text-center pt-2 pb-10 text-gray-800'>[she/they]</p>
 
             {/* quick intro */}
             <div className='flex sm:flex-row flex-col items-center max-w-3xl p-4 md:mx-auto mx-3'>
@@ -73,9 +73,9 @@ export default function Home() {
             </div>
 
             {/* other social media places */}
-            <div className='flex flex-col max-w-3xl items-center justify-center mt-8 p-4 md:mx-auto mx-3'>
-                <p className='text-med my-6'>even more places to find me (not work):</p>
-                <div className="flex space-x-16 mb-12">
+            <div className='flex flex-col max-w-3xl items-center justify-center p-4 md:mx-auto mx-3'>
+                <p className='text-med pb-6 text-gray-800 text-center'>even more places to find me (not work):</p>
+                <div className="flex space-x-16">
                     <a href="https://www.goodreads.com/user/show/50509124-sherry-liu" aria-label="Github" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
             transition duration-300 ease-in-out transform hover:-translate-y-1">
                         <FaGoodreads size={30} />
