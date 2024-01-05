@@ -6,15 +6,15 @@ import { FaTwitter } from "react-icons/fa";
 
 export const productDesign = [
     {
-        title: "project one",
-        description: "description.",
-        imageUrl: "/project-one.jpg",
+        title: "Discriminology Community Data Platform",
+        description: "UX research, product design",
+        imageUrl: "/projects/discriminology/cover2.png",
         link: "#",
     },
     {
-        title: "project two",
-        description: "description.",
-        imageUrl: "/project-two.jpg",
+        title: "UNCDF Matanataki Waste Fee Payment Platform",
+        description: "UX research, product design",
+        imageUrl: "/projects/matanataki/cover.png",
         link: "#",
     },
 ]

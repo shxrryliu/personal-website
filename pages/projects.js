@@ -15,7 +15,7 @@ export default function Home() {
                 <h3 className='pb-4 text-xl text-gray-800'>product design</h3>
                 <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-16 gap-4'>
                     {productDesign.map((project, index) => (
-                        <ProjectCard key={index} project={project} className="w-full h-64" imgClassName="h-44" />
+                        <ProjectCard key={index} project={project} className="w-full h-full" imgClassName="h-44" />
                     ))}
                 </div>
             </div>

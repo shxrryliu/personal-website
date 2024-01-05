@@ -17,7 +17,7 @@ const ProjectStrip = ({ project }) => {
                 <project.Icon className={`text-xl sm:text-2xl flex-shrink-0 mr-4 
                     ${isHovered ? 'text-red-700' : 'text-gray-600'} duration-300`} />
                 <div className="flex-grow pr-5">
-                    <p className="text-sm pb-2 font-extralight">{project.tags}</p>
+                    <p className="text-sm pb-1 font-extralight">{project.tags}</p>
                     <h5 className={`text-base sm:text-lg ${isHovered ? 'text-red-900' : 'text-gray-800'} duration-300`}>{project.title}</h5>
                     <p className="text-sm sm:block hidden text-gray-700">{project.description}</p>
                 </div>

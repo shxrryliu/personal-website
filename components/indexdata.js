@@ -44,20 +44,20 @@ export const workUpdates = {
 
 export const featuredProjects = [
     {
-      title: "project one",
-      description: "description.",
-      imageUrl: "/project-one.jpg", 
-      link: "#", 
+        title: "Discriminology Community Data Platform",
+        description: "UX research, product design",
+        imageUrl: "/projects/discriminology/cover2.png",
+        link: "#",
     },
     {
-      title: "project two",
-      description: "description.",
-      imageUrl: "/project-two.jpg",
-      link: "#",
+        title: "UNCDF Matanataki Waste Fee Payment Platform",
+        description: "UX research, product design",
+        imageUrl: "/projects/matanataki/cover.png",
+        link: "#",
     },
     {
-      title: "project three",
-      description: "description.",
-      imageUrl: "/project-two.jpg",
-      link: "#",
+      title: "The Pulse of Pressure: Analysis of HRV Data for Stress Detection",
+      description: "signal processing, python",
+      imageUrl: "/projects/heartbeatcover.png",
+      link: "https://drive.google.com/file/d/1HN0hxJW4QCL6aYMyT_ymVNQGixo7h-G1/view?usp=sharing",
     },  ];
