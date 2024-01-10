@@ -47,13 +47,13 @@ export const featuredProjects = [
         title: "Discriminology Community Data Platform",
         description: "UX research, product design",
         imageUrl: "/projects/discriminology/cover2.png",
-        link: "#",
+        link: "/projects/discriminology",
     },
     {
         title: "UNCDF Matanataki Waste Fee Payment Platform",
         description: "UX research, product design",
         imageUrl: "/projects/matanataki/cover.png",
-        link: "#",
+        link: "/projects/matanataki",
     },
     {
       title: "The Pulse of Pressure: Analysis of HRV Data for Stress Detection",
