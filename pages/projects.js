@@ -23,7 +23,7 @@ export default function Home() {
                 {/* more projects wip! */}
                 <p className='sm:text-right text-center pt-6 text-gray-600 text-xs'>
                     [more pages to come, featuring a design project called <br className='sm:block hidden'></br>
-                    <i className='text-red-700'>The Talk</i>, an inclusive sex-ed platform for LGBTQ+ youth]
+                    <a className='font-medium text-gray-700'>The Talk</a>, an inclusive sex-ed platform for LGBTQ+ youth]
                 </p>
             </div>
 
@@ -70,15 +70,13 @@ export default function Home() {
                     </li>                </ul>
 
                 <p className='text-lg pb-4 text-gray-80 mt-8 font-medium text-center'>
-                    {/* click {' '} */}
                     <Link
                         href='/'
                         className="group relative text-red-700 hover:text-red-900 transition duration-300"
                         passHref>
-                        final design reports here.
+                        read the final design reports
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span>
                     </Link>
-                    {/* {' '}to read all the final design reports. */}
                     </p>
             </div>
 
