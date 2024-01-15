@@ -38,7 +38,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
 
       {/* image */}
-      <img src="/me2.jpg" alt="me!" className="rounded-full w-32 h-32 object-cover mr-1 my-12 mt-32 scale-1" />
+      <img src="/me2.jpg" alt="me!" className="rounded-full w-32 h-32 object-cover mr-1 my-12 mt-32 scale-125" />
 
       {/* introduction */}
       <h2 className="text-2xl font-semibold text-center">Hey! I'm Sherry.</h2>
