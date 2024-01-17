@@ -45,7 +45,7 @@ export default function Home() {
                     A team from Harvard Tech for Social Good was put together to help Discriminology build a new mobile platform.
                 </p>
                 <p>
-                    I was the <b>Senior Designer</b> with a team of 4 designers. Our process consisted of:
+                    I was the <b className='text-blue-700'>Senior Designer</b> with a team of 4 designers. Our process consisted of:
                 </p>
                 <ul className="list-disc list-inside mx-6">
                     <li className='my-1'>7 focus group interviews</li>
@@ -59,23 +59,23 @@ export default function Home() {
 
                 {/* problem statement */}
                 <h3 className='mt-10 sm:mt-16 pb-4 text-xl font-medium text-blue-900'>the problem</h3>
-                <p className='text-gray-700'>
+                <p className='font-medium'>
                     There is no universal platform to help students report instances of racially charged interactions in schools.
                     Police reports are disorganized, individual, and meant to help officers — not the community.
                 </p>
-                <p className='text-gray-700 my-4'>
+                <p className='my-4'>
                     In developing a mobile application that democratizes education data for communities of color,
                     Discriminiology found that community organizers prefer
-                    <b> qualitative narratives to quantitative data</b>, and that personal narratives are often necessary to provide <b> context</b> to numerical data.
+                    <b className='text-blue-700'> qualitative narratives to quantitative data</b>, and that personal narratives are often necessary to provide <b className='text-blue-700'> context</b> to numerical data.
                 </p>
-                <p className='text-gray-700 pb-2 mx-5 sm:mx-20 italic'>
+                <p className='pb-2 mx-5 sm:mx-20 italic'>
                     “Reports and suspensions have little-to-no context, which makes it very difficult to identify issues within
                     school districts with respect to expulsions, suspensions, and other disciplinary action.”
                 </p>
-                <p className='text-gray-700 pb-4 mx-5 sm:mx-20 text-right italic'>
+                <p className='pb-4 mx-5 sm:mx-20 text-right italic'>
                     — Robb King, Discriminology</p>
 
-                <p className='text-gray-700 my-4'>
+                <p className='my-4'>
                     Our research and design aimed to solve a key problem statement:
                 </p>
                 <p className='text-blue-900 mb-4 font-medium mx-5 sm:mx-20 bg-gray-100 p-4 rounded-md shadow-md'>
@@ -96,12 +96,12 @@ export default function Home() {
                 {/* user research */}
                 <h3 className='mt-12 mb-4 text-xl font-medium text-blue-900'>background research & focus group analysis</h3>
                 <p className='text-gray-700 my-4'>
-                    In the first half of our <b>12-week cycle</b>, we scoped 8 existing reporting, mapping tools,
+                    In the first half of our <b className='text-blue-700'>12-week cycle</b>, we scoped 8 existing reporting, mapping tools,
                     and discussion platforms such as Snapchat, Google Maps, Waze, and Reddit, and reviewed
-                    <b> 5 focus group recordings with 12 community leaders</b>, with analysis focused on <b> user-centered design strategies</b>.
+                    <b className='text-blue-700'> 5 focus group recordings with 12 community leaders</b>, with analysis focused on <b className='text-blue-700'> user-centered design strategies</b>.
                 </p>
                 <p className='text-gray-700 my-4'>
-                    The goal of our focus group analysis was to discover the main <b> behaviors, attitudes, pain points, and goals</b> of each user.
+                    The goal of our focus group analysis was to discover the main <b className='text-blue-700'> behaviors, attitudes, pain points, and goals</b> of each user.
                     Behaviors and pain points allowed us to get a better sense of what does and does not work with the current system,
                     leading to the formulation of goals that we would try to incorporate into our new system designs.
                 </p>
@@ -348,7 +348,7 @@ export default function Home() {
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-blue-700">Reporting Database</h3>
-                        <ul className='my-4 list-disc list-inside'>
+                        <ul className='my-4 list-disc list-inside text-sm'>
                             <li className='my-2'>Privacy preferences should be asked first to encourage and honest responses through data transparency. </li>
                             <li className='my-2'>More iconography than was originally included in the lo-fis, helping to visually streamline the process for users.</li>
                         </ul>
@@ -356,7 +356,7 @@ export default function Home() {
                     <div className='p-5 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-blue-700">Heatmap & Top-Level Insights</h3>
-                        <ul className='my-4 list-disc list-inside'>
+                        <ul className='my-4 list-disc list-inside text-sm'>
                             <li className='my-2'>Consider the accessibility of color-coding a heatmap visualization.</li>
                             <li className='my-2'>Having both vertical and horizontal scrolling felt less intuitive than expected.</li>
                         </ul>
@@ -364,7 +364,7 @@ export default function Home() {
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-blue-700">Discussion Board</h3>
-                        <ul className='my-4 list-disc list-inside'>
+                        <ul className='my-4 list-disc list-inside text-sm'>
                             <li className='my-2'>It may be more helpful for users to be able to create a post without needing to select
                                 a category for users who may not be interested in reading through other posts. </li>
                             <li className='my-2'>Profile should be separate, not nested here.</li>
@@ -469,6 +469,8 @@ export default function Home() {
                     </div>
                 </div>
 
+
+                {/* feature 1 */}
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>feature 1: streamlined report flow</h3>
                 <p className='my-4'>
                     In the high fidelity prototype, we <b className='text-blue-700'>removed the two-step interaction</b> and incorporated additional questions
@@ -508,12 +510,88 @@ export default function Home() {
                     </div>
                 </div>
 
+                {/* heatmap and top-lvl insights */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>feature 2: heatmap & top-level insights</h3>
+                <p className='my-4'>
+                    In this version, the map is more visual and realistic, with more intuitive integration with top-level insights.
+                    In top-level insights, the <b className='text-blue-700'>information architecture</b> was updated to have a "View more" button
+                    in lieu of both horizontal and vertical scrolling. The data visualizations were organized from <b className='text-blue-700'> broad to specific </b>analysis
+                     per region. Custom filters were added to suit user needs. <i>Again, note that the content is largely filler, made in 
+                        agreement with the client's asks.
+                     </i>
+                </p>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
+                    <div>
+                        <img src='/projects/discriminology/hifi/map.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>map view with heat filter applied</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/toplvl.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>top-level insights for an example district</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/reportsrch.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>ability to search for specific reports</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/moreinsights.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>user can explore in-depth insights</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/moremore.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>data organized by specificity and region</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/Filters.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>custom filters for relevant results</p>
+                    </div>
+                </div>
 
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>feature 3: discussion board</h3>
+                <p className='my-4'>
+                    For the final handoff, this feature was prioritized last, since it could be high-effort and medium-low-impact to recreate 
+                    a social media system. The final design leveraged user feedback to include options for search based on location and category, 
+                    as well as a warning for potential sensitive media linked with posts.
+                     <i>Note that the content is mostly filler.
+                     </i>
+                </p>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
+                    <div>
+                        <img src='/projects/discriminology/hifi/hfdiscussion.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>discussion board feed</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/sampledisc.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>sample post with tags and media attachments</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/sensitive.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>sensitive image warning</p>
+                    </div>
+                </div>
+
+                {/* lastly, */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>finale</h3>
+                <p className='my-4'>
+                    Thanks for making it this far! I'd like to thank Discriminology for giving me the chance to work on an interesting 
+                    and high-impact project. These have been handed off for development with their team (in partnership with a dev 
+                    team from Tech for Social Good).
+
+                </p>
 
                 {/* BIG LINK */}
-                <p className='text-lg text-gray-80 mt-20 font-medium text-center'>
+                <p className='text-lg text-gray-80 mt-14 mb-8 font-medium text-center'>
                     <Link
-                        href='/'
+                        href='https://drive.google.com/file/d/1MP0-8dL4lN1oUqaoaW_sSjHLXCdOhKNR/view?usp=sharing'
                         className="group relative font-medium text-blue-700 hover:text-blue-900 transition duration-300"
                         passHref>
                         read the final design report
