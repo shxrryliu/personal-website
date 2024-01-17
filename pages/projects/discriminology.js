@@ -1,4 +1,5 @@
 import '../../tailwind.config'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -43,18 +44,18 @@ export default function Home() {
                 <p className='text-gray-700 mb-4'>
                     A team from Harvard Tech for Social Good was put together to help Discriminology build a new mobile platform.
                 </p>
-                <p className='text-gray-700'>
+                <p>
                     I was the <b>Senior Designer</b> with a team of 4 designers. Our process consisted of:
-                    <ul className="list-disc list-inside mx-6">
-                        <li className='my-1'>7 focus group interviews</li>
-                        <li className='mb-1'>Affinity mapping and identifying pain points</li>
-                        <li className='mb-1'>Feature lists and feature flows</li>
-                        <li className='mb-1'>Midpoint feedback session with the founders</li>
-                        <li className='mb-1'>Low fidelity prototypes</li>
-                        <li className='mb-1'>Usability tests</li>
-                        <li className='mb-1'>High-fidelity prototypes and Final Design Report</li>
-                    </ul>
                 </p>
+                <ul className="list-disc list-inside mx-6">
+                    <li className='my-1'>7 focus group interviews</li>
+                    <li className='mb-1'>Affinity mapping and identifying pain points</li>
+                    <li className='mb-1'>Feature lists and feature flows</li>
+                    <li className='mb-1'>Midpoint feedback session with the founders</li>
+                    <li className='mb-1'>Low fidelity prototypes</li>
+                    <li className='mb-1'>Usability tests</li>
+                    <li className='mb-1'>High-fidelity prototypes and Final Design Report</li>
+                </ul>
 
                 {/* problem statement */}
                 <h3 className='mt-10 sm:mt-16 pb-4 text-xl font-medium text-blue-900'>the problem</h3>
@@ -199,7 +200,8 @@ export default function Home() {
                 <h3 className='mt-10 sm:mt-14 mb-4 text-xl font-medium text-blue-900'>feature ideation</h3>
                 <p className='my-4'>
                     Based on these pain points, we determined the top features in our scope:
-                    <ul className='list-disc list-inside mx-8 font-medium my-3'>
+                </p>
+                <ul className='list-disc list-inside mx-8 font-medium'>
                         <li className='my-2'>
                             <b className='text-blue-700'>A reporting database</b> to track and report instances of discrimination
                             or police presence at schools.
@@ -213,6 +215,7 @@ export default function Home() {
                             topics and allow organizers to connect with individuals.
                         </li>
                     </ul>
+                <p className='my-4'>
                     We determined that these features would address the most urgent needs noted by Discriminology
                     and community organizers. This ideal system builds a focus on several main pain points that were
                     discussed earlier––mainly alleviating the process of collecting and analyzing data from the
@@ -241,7 +244,7 @@ export default function Home() {
                     a <b className='text-blue-700'>follow-up notification</b> for qualitative details with responses in paragraph form.
                 </p>
 
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
                         <img src='/projects/discriminology/lofi/report1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
@@ -282,7 +285,7 @@ export default function Home() {
                     location would show relevant <b className='text-blue-700'>top-level insights</b>, with deeper analytics nested further.
                 </p>
 
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
                         <img src='/projects/discriminology/lofi/map1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
@@ -321,9 +324,11 @@ export default function Home() {
                     <p>Lastly, we had a discussion board feature, designed to facilitate further conversation and buzz amongst
                         users on the platform. This feature was modeled similarly to Reddit, where users are able to create discussion posts
                         under particular topics, which can then be opened up to allow replies and reactions to those threads.</p>
-                    <img src='/projects/discriminology/lofi/discussion.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1 w-1/3 m-5 mx-auto'/>
                 </div>
+                <div className='sm:px-10'>
+                    <img src='/projects/discriminology/lofi/discussion.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 w-1/3 m-5 mx-auto'/></div>
+
 
 
                 {/* usability testing */}
@@ -360,8 +365,8 @@ export default function Home() {
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-blue-700">Discussion Board</h3>
                         <ul className='my-4 list-disc list-inside'>
-                            <li className='my-2'>It may be more helpful for users to be able to create a post without needing to select 
-                            a category for users who may not be interested in reading through other posts. </li>
+                            <li className='my-2'>It may be more helpful for users to be able to create a post without needing to select
+                                a category for users who may not be interested in reading through other posts. </li>
                             <li className='my-2'>Profile should be separate, not nested here.</li>
                         </ul>
                     </div>
@@ -380,10 +385,10 @@ export default function Home() {
                         user-friendly and intuitive. They specifically wanted more icons on the home page.
                     </li>
                     <li className='my-2'>
-                        <b className='text-blue-700'>Profile Pages</b>: Users wanted to see profile pages with relevant information, 
-                        such as geographic area, role in an organization, pronouns, and also the user’s own posts when other people land on their page. 
-                        The profile pages ought to be accessible from the home page of the app itself, allowing the app to find users, rather than 
-                        being hidden away in the discussion board feature. 
+                        <b className='text-blue-700'>Profile Pages</b>: Users wanted to see profile pages with relevant information,
+                        such as geographic area, role in an organization, pronouns, and also the user’s own posts when other people land on their page.
+                        The profile pages ought to be accessible from the home page of the app itself, allowing the app to find users, rather than
+                        being hidden away in the discussion board feature.
                     </li>
                 </ul>
 
@@ -397,15 +402,124 @@ export default function Home() {
             {/* FINAL DESIGN SOLUTION */}
             <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 text-gray-700'>
                 <h3 className='text-3xl font-medium text-blue-900 text-center'>Weeks 8-12: Final Design Solution.</h3>
-
-                {/* home page */}
+                {/* description */}
                 <p className='mt-10'>
-                    In the first half of our <b>12-week cycle</b>, we scoped 8 existing reporting, mapping tools,
-                    and discussion platforms such as Snapchat, Google Maps, Waze, and Reddit, and reviewed
-                    <b> 5 focus group recordings with 12 community leaders</b>, with analysis focused on <b> user-centered design strategies</b>.
+                    <b className='font-medium'>This takes us to the final design solution</b>, which was handed off to a dev team for development! Note that
+                    <b className='text-blue-700'> some content will be filler</b> in this final design. This was a joint decision made with Discriminology, since
+                    we are not subject-area experts in writing neutral fact-finding questions.
                 </p>
-                <h3 className='mt-10 mb-4 text-xl text-center font-medium text-blue-900'>read the final report</h3>
+                <p>
+                    <br />
+                    Feedback from usability testing was incorporated to refine the user flow and <b className='text-blue-700'>information architecture </b>
+                    was developed. We added a standard login flow that prioritizes upfront <b className='text-blue-700'> privacy disclaimers</b> into a home page with
+                    <b className='text-blue-700'> distinct iconography</b>.
+                </p>
 
+                {/* <h3 className='mt-10 sm:mt-16 mb-4 text-2xl font-medium text-blue-900 text-center italic'>Sprint 2: High Fidelity</h3> */}
+
+
+                {/* login flow */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>login flow emphasizing privacy</h3>
+                <p className='my-4'>
+                    We used a similar visual aesthetic as the current Discriminology website. This flow includes the opportunity for a user to <b className='text-blue-700'>browse as guest</b> to increase accessibility
+                    of information, even to people who may not yet feel ready to post. Notably, we also feature <b className='text-blue-700'>privacy level </b>
+                    as one of the first screens.
+                </p>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
+                    <div>
+                        <img src='/projects/discriminology/hifi/launch.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        {/* <p className='text-center mt-2'>heatmap showing report density</p> */}
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/signup.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        {/* <p className='text-center mt-2'>at-a-glance insights</p> */}
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/privacysignin.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        {/* <p className='text-center mt-2'>reports with tags</p> */}
+                    </div>
+                </div>
+
+                {/* homepage */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>home page: clear iconography & relevant info</h3>
+                <div className='sm:flex flex-row'>
+                    <div className='sm:w-2/3 sm:pr-10'>
+                        For an updated home page, we incorporated user feedback for the following changes.
+                        <ul className='list-disc list-inside mx-8'>
+                            <li className='my-2'>
+                                <b className='text-blue-700'>Profile Snippet</b>: included relevant information, pronouns, school association, and a verified checkmark
+                                to confirm that the user's identity within a school or organization is verified.
+                            </li>
+                            <li className='my-2'>
+                                <b className='text-blue-700'>Clear Iconography</b>: each call-to-action (CTA) had visual iconography associated with it, as well
+                                as color weights to separate "report" from other CTAs.
+                            </li>
+
+                            <li className='my-2'>
+                                <b className='text-blue-700'>Relevant "Recently" Feed</b>: including most notable trends that the user is following, or by geographic pertinence.
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='w-1/3 sm:pr-10 mx-auto my-6 sm:my-0'>
+                        <img src='/projects/discriminology/hifi/homepg.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                    </div>
+                </div>
+
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>feature 1: streamlined report flow</h3>
+                <p className='my-4'>
+                    In the high fidelity prototype, we <b className='text-blue-700'>removed the two-step interaction</b> and incorporated additional questions
+                    into the questionnaire itself. Privacy settings were asked first, and we included <b className='text-blue-700'>voice typing & video/photo attachments </b>
+                    to provide better qualitative context.
+                </p>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
+                    <div>
+                        <img src='/projects/discriminology/hifi/choosereport.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>distinct iconography to distinguish between choices</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/privacyreport.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>privacy preferences are upfront</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/mc.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>simple, multiple-choice answers</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/long.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>long-form questions with attachments and voice recording</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/review.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>final review, with option to edit</p>
+                    </div>
+                    <div>
+                        <img src='/projects/discriminology/hifi/submitted.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>submission hero notification</p>
+                    </div>
+                </div>
+
+
+
+                {/* BIG LINK */}
+                <p className='text-lg text-gray-80 mt-20 font-medium text-center'>
+                    <Link
+                        href='/'
+                        className="group relative font-medium text-blue-700 hover:text-blue-900 transition duration-300"
+                        passHref>
+                        read the final design report
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-900 transition-all duration-200 group-hover:w-full"></span>
+                    </Link>
+                </p>
             </div>
 
         </div>
