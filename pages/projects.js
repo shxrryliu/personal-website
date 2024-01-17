@@ -71,7 +71,7 @@ export default function Home() {
 
                 <p className='text-lg pb-4 text-gray-80 mt-8 font-medium text-center'>
                     <Link
-                        href='/'
+                        href='https://drive.google.com/drive/folders/1NQttAiSYES-7Qi1fE6_oK8PAjN9MAuG2?usp=sharing'
                         className="group relative text-red-700 hover:text-red-900 transition duration-300"
                         passHref>
                         read the final design reports

@@ -404,7 +404,7 @@ export default function Home() {
                 <h3 className='text-3xl font-medium text-blue-900 text-center'>Weeks 8-12: Final Design Solution.</h3>
                 {/* description */}
                 <p className='mt-10'>
-                    <b className='font-medium'>This takes us to the final design solution</b>, which was handed off to a dev team for development! Note that
+                    <b className='font-medium'>This takes us to the final design solution, which was handed off to a dev team for development!</b> Note that
                     <b className='text-blue-700'> some content will be filler</b> in this final design. This was a joint decision made with Discriminology, since
                     we are not subject-area experts in writing neutral fact-finding questions.
                 </p>
