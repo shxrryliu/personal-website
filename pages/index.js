@@ -1,6 +1,6 @@
 import '../tailwind.config'
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useEffect , useState } from 'react';
 import { useRouter } from 'next/router';
 import { lifeUpdates, workUpdates, featuredProjects } from '../components/indexdata';
 import ProjectCard from '../components/projectcard';
@@ -11,6 +11,17 @@ export default function Home() {
 
   const router = useRouter();
 
+  // role in the intro
+  const [role, setRole] = useState('quantitative social scientist');
+
+  const roles = ['quantitative social scientist', 'product manager', 'product designer'];
+  const nextRole = () => roles[(roles.indexOf(role) + 1) % roles.length];
+
+  const handleHover = () => {
+    setRole(nextRole());
+  };
+
+  // scrolling down to contact
   useEffect(() => {
     const handleScrollToElement = () => {
       const hash = window.location.hash;
@@ -42,7 +53,11 @@ export default function Home() {
 
       {/* introduction */}
       <h2 className="text-2xl font-semibold text-center">Hey! I'm Sherry.</h2>
-      <p className="text-2xl font-semibold text-center mt-2">A quantitative social scientist from Las Vegas.</p>
+      <p className="text-2xl font-semibold text-center mt-2">
+        A {' '}
+        <span className="role-flip inline-block text-red-700" onMouseEnter={handleHover}>{role}</span>
+        {' '} from Las Vegas.
+      </p>
       <p className="text-center mt-4 mb-8 text-gray-800">I’m passionate about socially-minded tech development.</p>
 
       {/* social icons! */}
@@ -109,8 +124,8 @@ export default function Home() {
           {/* projects container */}
           <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-6 space-y-6 sm:space-y-0">
             {featuredProjects.map((project, index) => (
-                <ProjectCard key={index} project={project} className="w-72 sm:w-1/2 md:w-1/3 lg:w-full" imgClassName="h-52" />
-                ))}
+              <ProjectCard key={index} project={project} className="w-72 sm:w-1/2 md:w-1/3 lg:w-full" imgClassName="h-52" />
+            ))}
           </div>
 
           {/* more link */}
