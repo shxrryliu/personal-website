@@ -589,7 +589,7 @@ export default function Home() {
                 </p>
 
                 {/* BIG LINK */}
-                <p className='text-lg text-gray-80 mt-14 mb-8 font-medium text-center'>
+                <p className='text-2xl text-gray-80 mt-14 mb-8 font-medium text-center'>
                     <Link
                         href='https://drive.google.com/file/d/1MP0-8dL4lN1oUqaoaW_sSjHLXCdOhKNR/view?usp=sharing'
                         className="group relative font-medium text-blue-700 hover:text-blue-900 transition duration-300"

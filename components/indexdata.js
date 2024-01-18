@@ -11,8 +11,9 @@ export const workUpdates = {
     title: "work updates",
     current: (
         <p>
-            finishing my degree in Applied Mathematics in Sociology, incoming product
-            manager @ Microsoft, and a teaching fellow for Harvard's{' '}
+            finishing my degree in Applied Mathematics in Sociology{' '}
+            {/* incoming product manager @ Microsoft,  */}
+            and a teaching fellow for Harvard's{' '}
             <Link
                 href="https://canvas.harvard.edu/courses/123847/assignments/syllabus"
                 className="group relative text-red-700 hover:text-red-900 transition duration-300"
@@ -26,6 +27,7 @@ export const workUpdates = {
     ),
     previous: (
         <p>
+            product manager intern @ Microsoft, 
             director of product research & design @ {' '}
             <Link
                 href="https://socialgood.hcs.harvard.edu/"
