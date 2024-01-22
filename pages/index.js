@@ -12,10 +12,10 @@ export default function Home() {
   const router = useRouter();
 
   // role in the intro
-  const [role, setRole] = useState('quantitative social scientist');
-  const [opacity, setOpacity] = useState(1);  // State to control opacity
+  const [role, setRole] = useState('product manager');
+  const [opacity, setOpacity] = useState(1);
 
-  const roles = ['product manager', 'product designer', 'quantitative social scientist'];
+  const roles = ['quantitative social scientist', 'product manager', 'product designer'];
   const nextRole = () => roles[(roles.indexOf(role) + 1) % roles.length];
 
   const handleClick = () => {
