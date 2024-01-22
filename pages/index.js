@@ -1,6 +1,6 @@
 import '../tailwind.config'
 import Link from 'next/link';
-import { useEffect , useState } from 'react';
+import { useEffect, useState, useRef, React } from 'react';
 import { useRouter } from 'next/router';
 import { lifeUpdates, workUpdates, featuredProjects } from '../components/indexdata';
 import ProjectCard from '../components/projectcard';
@@ -13,12 +13,17 @@ export default function Home() {
 
   // role in the intro
   const [role, setRole] = useState('quantitative social scientist');
+  const [opacity, setOpacity] = useState(1);  // State to control opacity
 
-  const roles = ['quantitative social scientist', 'product manager', 'product designer'];
+  const roles = ['product manager', 'product designer', 'quantitative social scientist'];
   const nextRole = () => roles[(roles.indexOf(role) + 1) % roles.length];
 
-  const handleHover = () => {
-    setRole(nextRole());
+  const handleClick = () => {
+    setOpacity(0);
+    setTimeout(() => {
+      setRole(nextRole());
+      setOpacity(1);
+    }, 200);
   };
 
   // scrolling down to contact
@@ -55,7 +60,7 @@ export default function Home() {
       <h2 className="text-2xl font-semibold text-center">Hey! I'm Sherry.</h2>
       <p className="text-2xl font-semibold text-center mt-2">
         A {' '}
-        <span className="role-flip inline-block text-red-700" onMouseEnter={handleHover}>{role}</span>
+        <span className="role inline-block text-gray-500 hover:text-red-700 cursor-pointer" onClick={handleClick} style={{opacity: opacity, transition: 'opacity 0.3s ease, color 0.3s ease'}}>{role}</span>
         {' '} from Las Vegas.
       </p>
       <p className="text-center mt-4 mb-8 text-gray-800">I’m passionate about socially-minded tech development.</p>
