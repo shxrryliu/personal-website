@@ -39,7 +39,7 @@ export default function Home() {
             {/* INTRO SECTION */}
             <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 sm:mt-14 mt-8'>
 
-            <div className='grid grid-cols-2 sm:grid-cols-4 mb-14 gap-8'>
+                <div className='grid grid-cols-2 sm:grid-cols-4 mb-14 gap-8'>
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1 text-center'>
                         <h1 className='font-semibold text-5xl'>4</h1>
@@ -283,110 +283,92 @@ export default function Home() {
                     which means they were akin to rough sketches to focus on layout rather than visual details.
                     <i> This is not our final design</i>.</p>
                 <p className='my-4'>
-                    To create our first rough, clickable prototype, we used the Fisamiq Figma Template Design System,
-                    which includes various components that mimic sketched prototypes. After showing designs to 12+
-                    community organizers in our initial feedback session, we incorporated their insights into Sprint 2 designs.                </p>
+                    To create our first rough, clickable prototype, we used the Impakt Figma Template Design System,
+                    which includes various components that mimic sketched prototypes. After showing designs to two potential users
+                    (both business owners of local companies in Fiji) in our usability tests, we incorporated their insights into the second-stage designs.               </p>
 
                 {/* reporting database */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 1: reporting database</h3>
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>low fidelity prototypes for usability walkthrough</h3>
                 <p className='my-4'>
-                    For the reporting database, which is the most fundamental feature of the app, we made a <b className='text-green-800'>two-step approach</b> to reporting.
-                    In the first step, we took inspiration from apps like Waze which make it simple to report traffic incidents. We focused on making the experience as simple and streamlined as
-                    possible via <b className='text-green-800'>multiple-choice questionnaires</b>. To nudge for more details after this low-friction reporting experience, we included
-                    a <b className='text-green-800'>follow-up notification</b> for qualitative details with responses in paragraph form.
+                    For the <b className='text-green-800'>Waste Streams Dashboard</b>, we created an intuitive scrollable home screen that allows
+                    users to pick the type of waste they would like to dispose of. From there, users can see educational information about
+                    the type of waste that they are disposing of, as well as the options they have for disposal.
+                </p>
+                <p className='my-4'>
+                    For the <b className='text-green-800'>Waste Pickup Scheduler</b>, we designed a straightforward flow for our users, allowing them
+                    to provide the necessary customizations and information for a successful pickup. Through usability tests, we hoped to see if the flow
+                    felt natural for our users, and if there was any part that felt confusing or missing.
+                </p>
+                <p className='my-4'>
+                    The <b className='text-green-800'>Personal Payment History Dashboard</b> was designed around the idea of being able to “sort
+                    by” different categories of waste payments: action, schedule type, waste type, provider, payment
+                    status, order status, and schedule date — with totals over each subcategory.
+                </p>
+                <p className='my-4'>
+                    The <b className='text-green-800'>Impact Profile</b> needed to serve two main purposes: to give users a place to set important
+                    user profile-related information (name, photo, council, payment) and to view sustainability impact
+                    statistics. Two screens were designed for the impact statistics: a flashier, shareable summary
+                    page, and more in-depth, progress-tracking details page.
                 </p>
 
-                <div className='grid grid-cols-3 gap-4 sm:px-10'>
+                <div className='grid grid-cols-5 my-8 gap-4 sm:px-10'>
                     <div>
-                        <img src='/projects/discriminology/lofi/report1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/pick.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center  mt-2'>placeholders in low fidelity prototype</p>
+                        <p className='text-center  mt-2'>homepage</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/report2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/home.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center  mt-2'>simple, multiple choice</p>
+                        <p className='text-center  mt-2'>type of rubbish</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/report3privacy.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/location.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center  mt-2'>privacy preferences to help students feel comfortable</p>
+                        <p className='text-center  mt-2'>map location selector</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/report5status.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/type.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center  mt-2'>report submitted, but follow-up questionnaire needed</p>
+                        <p className='text-center  mt-2'>select rubbish type</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/report6notif.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/provider.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center  mt-2'>notification for qualitative details</p>
+                        <p className='text-center  mt-2'>select service provider</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/report7.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/confirmal.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center  mt-2'>open-ended questions</p>
-                    </div>
-                </div>
-
-                {/* heatmap */}
-                <h3 className='mt-12 sm:mt-20 mb-4 text-xl font-medium text-green-800'>feature 2: heatmap with top-level insights</h3>
-                <p className='my-4'>
-                    Our second feature uses a heatmap as a combination of a <b className='text-green-800'>mapping and data analytics tool</b>.
-                    Depending on the user needs, the map could show the concentration of reports coming in from schools in their area. At a quick glance, each
-                    location would show relevant <b className='text-green-800'>top-level insights</b>, with deeper analytics nested further.
-                </p>
-
-                <div className='grid grid-cols-3 gap-4 sm:px-10'>
-                    <div>
-                        <img src='/projects/discriminology/lofi/map1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>heatmap showing report density</p>
+                        <p className='text-center  mt-2'>confirmation page</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/map2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/profile.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>at-a-glance insights</p>
+                        <p className='text-center  mt-2'>profile page</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/map3.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/stats1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>reports with tags</p>
+                        <p className='text-center  mt-2'>personal stats</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/map4.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/stats2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>filters</p>
+                        <p className='text-center  mt-2'>personal stats, more detailed</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/lofi/map5.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/lofi/summaries.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>high-level trends [potential for AI use here]</p>
-                    </div>
-                    <div>
-                        <img src='/projects/discriminology/lofi/map6.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>data visualizations for each district</p>
+                        <p className='text-center  mt-2'>payment history summaries</p>
                     </div>
                 </div>
-
-                {/* discussion board */}
-                <h3 className='mt-12 sm:mt-20 mb-4 text-xl font-medium text-green-800'>feature 3: local discussion board</h3>
-                <div className='my-4'>
-                    <p>Lastly, we had a discussion board feature, designed to facilitate further conversation and buzz amongst
-                        users on the platform. This feature was modeled similarly to Reddit, where users are able to create discussion posts
-                        under particular topics, which can then be opened up to allow replies and reactions to those threads.</p>
-                </div>
-                <div className='sm:px-10'>
-                    <img src='/projects/discriminology/lofi/discussion.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1 w-1/3 m-5 mx-auto'/></div>
-
 
 
                 {/* usability testing */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>usability testing</h3>
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>usability testing takeaways</h3>
                 <p className='my-4'>
-                    After creating our low-fidelity prototypes, we brought the prototypes to a live audience with 3 users for a <b className='text-green-800'>usability test</b>.
+                    After creating our low-fidelity prototypes, we brought the prototypes to a live audience with 2 users for a <b className='text-green-800'>usability test</b>.
                     In that session, we walked through the prototype using the following interview procedure:
                 </p>
                 <ul className='my-6 list-inside mx-8'>
@@ -396,10 +378,10 @@ export default function Home() {
                 </ul>
 
                 <p className='mt-8'>Our usability testing revealed the following feedback:</p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
-                        <h3 className="font-bold mb-3 text-green-800">Reporting Database</h3>
+                        <h3 className="font-bold mb-3 text-green-800">Waste Streams Dashboard</h3>
                         <ul className='my-4 list-disc list-inside text-sm'>
                             <li className='my-2'>Privacy preferences should be asked first to encourage and honest responses through data transparency. </li>
                             <li className='my-2'>More iconography than was originally included in the lo-fis, helping to visually streamline the process for users.</li>
