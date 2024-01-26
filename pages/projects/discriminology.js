@@ -40,6 +40,31 @@ export default function Home() {
 
             {/* upper section */}
             <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 sm:mt-14 mt-8'>
+
+                <div className='grid grid-cols-2 sm:grid-cols-4 mb-14 gap-8'>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>3</h1>
+                        <p className='font-medium'>months</p>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>5</h1>
+                        <p className='font-medium'>focus groups</p>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>2</h1>
+                        <p className='font-medium'>iterations</p>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>18</h1>
+                        <p className='font-medium'>Figma files</p>
+                    </div>
+                </div>
+
+
                 <h3 className='mb-4 text-xl font-medium text-blue-900'>a partner project between Discriminology and Harvard Tech for Social Good</h3>
                 <p className=' mb-4'>
                     A team from Harvard Tech for Social Good was put together to help Discriminology build a new mobile platform.
@@ -48,7 +73,7 @@ export default function Home() {
                     I was the <b className='text-blue-700'>Senior Designer</b> with a team of 4 designers. Our process consisted of:
                 </p>
                 <ul className="list-disc list-inside mx-6">
-                    <li className='my-1'>7 focus group interviews</li>
+                    <li className='my-1'>5 focus group interviews</li>
                     <li className='mb-1'>Affinity mapping and identifying pain points</li>
                     <li className='mb-1'>Feature lists and feature flows</li>
                     <li className='mb-1'>Midpoint feedback session with the founders</li>
@@ -202,19 +227,19 @@ export default function Home() {
                     Based on these pain points, we determined the top features in our scope:
                 </p>
                 <ul className='list-disc list-inside mx-8 font-medium'>
-                        <li className='my-2'>
-                            <b className='text-blue-700'>A reporting database</b> to track and report instances of discrimination
-                            or police presence at schools.
-                        </li>
-                        <li className='my-2'>
-                            <b className='text-blue-700'>A heat mapping tool leading into top-level regional insights</b>, which
-                            allows students and organizers to monitor trends based on geographic cluster.
-                        </li>
-                        <li className='my-2'>
-                            <b className='text-blue-700'>A local discussion board</b> for all community members to engage on discussion
-                            topics and allow organizers to connect with individuals.
-                        </li>
-                    </ul>
+                    <li className='my-2'>
+                        <b className='text-blue-700'>A reporting database</b> to track and report instances of discrimination
+                        or police presence at schools.
+                    </li>
+                    <li className='my-2'>
+                        <b className='text-blue-700'>A heat mapping tool leading into top-level regional insights</b>, which
+                        allows students and organizers to monitor trends based on geographic cluster.
+                    </li>
+                    <li className='my-2'>
+                        <b className='text-blue-700'>A local discussion board</b> for all community members to engage on discussion
+                        topics and allow organizers to connect with individuals.
+                    </li>
+                </ul>
                 <p className='my-4'>
                     We determined that these features would address the most urgent needs noted by Discriminology
                     and community organizers. This ideal system builds a focus on several main pain points that were
@@ -516,9 +541,9 @@ export default function Home() {
                     In this version, the map is more visual and realistic, with more intuitive integration with top-level insights.
                     In top-level insights, the <b className='text-blue-700'>information architecture</b> was updated to have a "View more" button
                     in lieu of both horizontal and vertical scrolling. The data visualizations were organized from <b className='text-blue-700'> broad to specific </b>analysis
-                     per region. Custom filters were added to suit user needs. <i>Again, note that the content is largely filler, made in 
+                    per region. Custom filters were added to suit user needs. <i>Again, note that the content is largely filler, made in
                         agreement with the client's asks.
-                     </i>
+                    </i>
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
@@ -555,11 +580,11 @@ export default function Home() {
 
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>feature 3: discussion board</h3>
                 <p className='my-4'>
-                    For the final handoff, this feature was prioritized last, since it could be high-effort and medium-low-impact to recreate 
-                    a social media system. The final design leveraged user feedback to include options for search based on location and category, 
+                    For the final handoff, this feature was prioritized last, since it could be high-effort and medium-low-impact to recreate
+                    a social media system. The final design leveraged user feedback to include options for search based on location and category,
                     as well as a warning for potential sensitive media linked with posts.
-                     <i>Note that the content is mostly filler.
-                     </i>
+                    <i>Note that the content is mostly filler.
+                    </i>
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
@@ -582,8 +607,8 @@ export default function Home() {
                 {/* lastly, */}
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>finale</h3>
                 <p className='my-4'>
-                    Thanks for making it this far! I'd like to thank Discriminology for giving me the chance to work on an interesting 
-                    and high-impact project. These have been handed off for development with their team (in partnership with a dev 
+                    Thanks for making it this far! I'd like to thank Discriminology for giving me the chance to work on an interesting
+                    and high-impact project. These have been handed off for development with their team (in partnership with a dev
                     team from Tech for Social Good).
 
                 </p>
