@@ -157,14 +157,14 @@ export default function Home() {
                 </p>
 
                 {/* PERSONAS */}
-                <h3 className='mt-10 sm:mt-16 mb-4 text-xl font-medium text-green-800'>user personas</h3>
-                <p className=' my-4'>
+                {/* <h3 className='mt-10 sm:mt-16 mb-4 text-xl font-medium text-green-800'>user personas</h3> */}
+                {/* <p className=' my-4'>
                     In user-centered design, personas are imaginary but realistic descriptions of our primary
                     audience to form the basis of <b className='text-green-800'>consistent design decisions</b>, and to ensure that our design
                     solutions truly address our users' needs. With the feedback of stakeholders, directors, and office
                     managers has been integrated, we focused on <b className='text-green-800'>5 personas</b>: <i>Mason the Manager, Matt the Monopoly
                         Man, Trina the Tree Hugger, Vincent the Villager, and Tracy the Tech-Savvy.</i>
-                </p>
+                </p> */}
 
 
                 {/* KEY INSIGHTS */}
@@ -174,7 +174,7 @@ export default function Home() {
                     These were supported through various user interviews. As a team, we organized by the most important pain points to design a <b className='text-green-800'>minimum viable product</b>.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 my-8 sm:my-10">
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-green-800">Gaps in Sustainability Education</h3>
@@ -282,22 +282,17 @@ export default function Home() {
                     To quickly generate ideas and to encourage honest feedback, we completed our designs in <b className='text-green-800'>low fidelity</b>,
                     which means they were akin to rough sketches to focus on layout rather than visual details.
                     <i> This is not our final design</i>.</p>
-                <p className='my-4'>
-                    To create our first rough, clickable prototype, we used the Impakt Figma Template Design System,
-                    which includes various components that mimic sketched prototypes. After showing designs to two potential users
-                    (both business owners of local companies in Fiji) in our usability tests, we incorporated their insights into the second-stage designs.               </p>
 
-                {/* reporting database */}
+                {/* LOFI */}
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>low fidelity prototypes for usability walkthrough</h3>
                 <p className='my-4'>
                     For the <b className='text-green-800'>Waste Streams Dashboard</b>, we created an intuitive scrollable home screen that allows
-                    users to pick the type of waste they would like to dispose of. From there, users can see educational information about
-                    the type of waste that they are disposing of, as well as the options they have for disposal.
+                    users to pick the type of waste they would like to dispose of. Users can see educational information about
+                    the type of waste that they are disposing of.
                 </p>
                 <p className='my-4'>
                     For the <b className='text-green-800'>Waste Pickup Scheduler</b>, we designed a straightforward flow for our users, allowing them
-                    to provide the necessary customizations and information for a successful pickup. Through usability tests, we hoped to see if the flow
-                    felt natural for our users, and if there was any part that felt confusing or missing.
+                    to provide the necessary customizations and information for a successful pickup.
                 </p>
                 <p className='my-4'>
                     The <b className='text-green-800'>Personal Payment History Dashboard</b> was designed around the idea of being able to “sort
@@ -307,8 +302,7 @@ export default function Home() {
                 <p className='my-4'>
                     The <b className='text-green-800'>Impact Profile</b> needed to serve two main purposes: to give users a place to set important
                     user profile-related information (name, photo, council, payment) and to view sustainability impact
-                    statistics. Two screens were designed for the impact statistics: a flashier, shareable summary
-                    page, and more in-depth, progress-tracking details page.
+                    statistics.
                 </p>
 
                 <div className='grid grid-cols-5 my-8 gap-4 sm:px-10'>
@@ -366,7 +360,7 @@ export default function Home() {
 
 
                 {/* usability testing */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>usability testing takeaways</h3>
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>usability testing & takeaways</h3>
                 <p className='my-4'>
                     After creating our low-fidelity prototypes, we brought the prototypes to a live audience with 2 users for a <b className='text-green-800'>usability test</b>.
                     In that session, we walked through the prototype using the following interview procedure:
@@ -378,26 +372,36 @@ export default function Home() {
                 </ul>
 
                 <p className='mt-8'>Our usability testing revealed the following feedback:</p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 my-8 sm:my-10">
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-green-800">Waste Streams Dashboard</h3>
                         <ul className='my-4 list-disc list-inside text-sm'>
-                            <li className='my-2'>Privacy preferences should be asked first to encourage and honest responses through data transparency. </li>
-                            <li className='my-2'>More iconography than was originally included in the lo-fis, helping to visually streamline the process for users.</li>
+                            <li className='my-2'>Reclassified and renamed the rubbish classifications to better match native usability</li>
+                            <li className='my-2'>Gave users the option to see more educational content about the type of waste they are
+                                disposing of to promote longer lasting waste management changes</li>
                         </ul>
                     </div>
                     <div className='p-5 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
-                        <h3 className="font-bold mb-3 text-green-800">Heatmap & Top-Level Insights</h3>
+                        <h3 className="font-bold mb-3 text-green-800">Waste Pickup Scheduler</h3>
                         <ul className='my-4 list-disc list-inside text-sm'>
-                            <li className='my-2'>Consider the accessibility of color-coding a heatmap visualization.</li>
-                            <li className='my-2'>Having both vertical and horizontal scrolling felt less intuitive than expected.</li>
+                            <li className='my-2'>Allowed users to include more information about waste pickups (additional comments, weight of waste, etc.)</li>
+                            <li className='my-2'>Allowed users to choose payment methods (checks and M-PAiSA), as well as use points earned from waste drop-offs to pay for pick-ups</li>
                         </ul>
                     </div>
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
-                        <h3 className="font-bold mb-3 text-green-800">Discussion Board</h3>
+                        <h3 className="font-bold mb-3 text-green-800">Personal Payment History Dashboard</h3>
+                        <ul className='my-4 list-disc list-inside text-sm'>
+                            <li className='my-2'>Adjusted “pending” payment statuses (e.g. for checks) to be more emphasized</li>
+                            <li className='my-2'>Provided external links to invoices are if available (e.g. for M-PAiSA)</li>
+                            <li className='my-2'>Added notifications as an additional item in the navigation bar</li>
+                        </ul>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'>
+                        <h3 className="font-bold mb-3 text-green-800">Impact Profile</h3>
                         <ul className='my-4 list-disc list-inside text-sm'>
                             <li className='my-2'>It may be more helpful for users to be able to create a post without needing to select
                                 a category for users who may not be interested in reading through other posts. </li>
@@ -405,28 +409,6 @@ export default function Home() {
                         </ul>
                     </div>
                 </div>
-
-                <p className='mt-6'>
-                    There were also a couple other general pieces of feedback from out users:
-                </p>
-                <ul className='list-disc list-inside mx-8'>
-                    <li className='my-2'>
-                        <b className='text-green-800'>Accessibility Options</b>: Users emphasized the importance of including accessibility options in the app
-                        for the visually impaired.
-                    </li>
-                    <li className='my-2'>
-                        <b className='text-green-800'>More Icons</b>: Users repeatedly mentioned iconography as an important aspect of making the app
-                        user-friendly and intuitive. They specifically wanted more icons on the home page.
-                    </li>
-                    <li className='my-2'>
-                        <b className='text-green-800'>Profile Pages</b>: Users wanted to see profile pages with relevant information,
-                        such as geographic area, role in an organization, pronouns, and also the user’s own posts when other people land on their page.
-                        The profile pages ought to be accessible from the home page of the app itself, allowing the app to find users, rather than
-                        being hidden away in the discussion board feature.
-                    </li>
-                </ul>
-
-
             </div>
 
             <div className='max-w-3xl w-full mx-auto'>
@@ -439,186 +421,170 @@ export default function Home() {
                 {/* description */}
                 <p className='mt-10'>
                     <b className='font-medium'>This takes us to the final design solution, which was handed off to a dev team for development!</b> Note that
-                    <b className='text-green-800'> some content will be filler</b> in this final design. This was a joint decision made with Discriminology, since
+                    <b className='text-green-800'> some content will be filler</b> in this final design. This was a joint decision made with Matanataki, since
                     we are not subject-area experts in writing neutral fact-finding questions.
                 </p>
                 <p>
                     <br />
                     Feedback from usability testing was incorporated to refine the user flow and <b className='text-green-800'>information architecture </b>
-                    was developed. We added a standard login flow that prioritizes upfront <b className='text-green-800'> privacy disclaimers</b> into a home page with
-                    <b className='text-green-800'> distinct iconography</b>.
+                    was refined. We changed the information shown to match <b className='text-green-800'> user expectations</b> regarding language use (i.e. "rubbish" rather than "waste"), content shown,
+                    paymend methods, and sustainability impact statistics.
                 </p>
 
-                {/* <h3 className='mt-10 sm:mt-16 mb-4 text-2xl font-medium text-green-800 text-center italic'>Sprint 2: High Fidelity</h3> */}
-
-
-                {/* login flow */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>login flow emphasizing privacy</h3>
+                {/* WASTE STREAMS DASHBOARD */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 1: waste streams dashboard</h3>
                 <p className='my-4'>
-                    We used a similar visual aesthetic as the current Discriminology website. This flow includes the opportunity for a user to <b className='text-green-800'>browse as guest</b> to increase accessibility
-                    of information, even to people who may not yet feel ready to post. Notably, we also feature <b className='text-green-800'>privacy level </b>
-                    as one of the first screens.
+                    In the home screen, users can see a <b className='text-green-800'> profile summary</b> with a photo, name, and current credit. There will also be a
+                    scrollable dashboard of different waste types. In addition to being educational, <i> users have the new option of dropping off waste at different locations</i>, using a <b className='text-green-800'> custom QR code</b> to
+                    quickly verify that the waste has been dropped off — this lowers the cost of pickups for residents and provides another way to sustainably manage waste.
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
-                        <img src='/projects/discriminology/hifi/launch.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/hfhome.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        {/* <p className='text-center mt-2'>heatmap showing report density</p> */}
+                        <p className='text-center mt-2'>scrollable home page</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/signup.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/plastics.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        {/* <p className='text-center mt-2'>at-a-glance insights</p> */}
+                        <p className='text-center mt-2'>quick learn</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/privacysignin.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/lrnmore.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        {/* <p className='text-center mt-2'>reports with tags</p> */}
+                        <p className='text-center mt-2'>detailed learning</p>
+                    </div>
+                    <div>
+                        <img src='/projects/matanataki/hifi/dropoff1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>location picker</p>
+                    </div>
+                    <div>
+                        <img src='/projects/matanataki/hifi/dropoff2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>location info</p>
+                    </div>
+                    <div>
+                        <img src='/projects/matanataki/hifi/dropoff3.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>QR code</p>
                     </div>
                 </div>
 
-                {/* homepage */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>home page: clear iconography & relevant info</h3>
-                <div className='sm:flex flex-row'>
-                    <div className='sm:w-2/3 sm:pr-10'>
-                        For an updated home page, we incorporated user feedback for the following changes.
-                        <ul className='list-disc list-inside mx-8'>
-                            <li className='my-2'>
-                                <b className='text-green-800'>Profile Snippet</b>: included relevant information, pronouns, school association, and a verified checkmark
-                                to confirm that the user's identity within a school or organization is verified.
-                            </li>
-                            <li className='my-2'>
-                                <b className='text-green-800'>Clear Iconography</b>: each call-to-action (CTA) had visual iconography associated with it, as well
-                                as color weights to separate "report" from other CTAs.
-                            </li>
-
-                            <li className='my-2'>
-                                <b className='text-green-800'>Relevant "Recently" Feed</b>: including most notable trends that the user is following, or by geographic pertinence.
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='w-1/3 sm:pr-10 mx-auto my-6 sm:my-0'>
-                        <img src='/projects/discriminology/hifi/homepg.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1'/>
-                    </div>
-                </div>
-
-
-                {/* feature 1 */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 1: streamlined report flow</h3>
+                {/* feature 2 */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 2: waste pickup scheduler</h3>
                 <p className='my-4'>
-                    In the high fidelity prototype, we <b className='text-green-800'>removed the two-step interaction</b> and incorporated additional questions
-                    into the questionnaire itself. Privacy settings were asked first, and we included <b className='text-green-800'>voice typing & video/photo attachments </b>
-                    to provide better qualitative context.
+                    Off of the waste streams from the dashboard, users will easily <b className='text-green-800'> schedule waste pickups</b>. Users will also be able
+                    to filter these waste types, for example by the types that their city council manages, and to add their own customizable
+                    templates for personal waste streams (for example, of cans and bottles together) that they find themselves needing to dispose of often.
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
-                        <img src='/projects/discriminology/hifi/choosereport.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/sched1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>distinct iconography to distinguish between choices</p>
+                        <p className='text-center mt-2'>interactive location pickup map</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/privacyreport.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/sched2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>privacy preferences are upfront</p>
+                        <p className='text-center mt-2'>waste type selection</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/mc.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/sched3.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>simple, multiple-choice answers</p>
+                        <p className='text-center mt-2'>provider selection (filler content)</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/long.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/sched4.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>long-form questions with attachments and voice recording</p>
+                        <p className='text-center mt-2'>time and date</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/review.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/sched5.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>final review, with option to edit</p>
+                        <p className='text-center mt-2'>confirmation page</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/submitted.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/sched6.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>submission hero notification</p>
+                        <p className='text-center mt-2'>payment page</p>
+                    </div>
+                </div>
+
+
+                {/* feature 3 */}
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 3: personal payment history dashboard</h3>
+                <p className='my-4'>
+                    Using the personal payment history dashboard, users can see if they have any outstanding fees that need
+                    to be paid to their local council. They can also see what they have paid in the past, the <b className='text-green-800'> status</b> of their payments,
+                    and <b className='text-green-800'> filter</b> their <b className='text-green-800'> payment history</b> to see the kinds of payments they have made in the past. </p>
+                <div className='grid grid-cols-3 gap-4 sm:px-10'>
+                    <div>
+                        <img src='/projects/matanataki/hifi/history1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>view payment history by status</p>
+                    </div>
+                    <div>
+                        <img src='/projects/matanataki/hifi/history2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>expanded payment history details</p>
+                    </div>
+                    <div>
+                        <img src='/projects/matanataki/hifi/history3.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1'/>
+                        <p className='text-center mt-2'>sort history by</p>
                     </div>
                 </div>
 
                 {/* heatmap and top-lvl insights */}
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 2: heatmap & top-level insights</h3>
+                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 4: impact profile</h3>
                 <p className='my-4'>
-                    In this version, the map is more visual and realistic, with more intuitive integration with top-level insights.
-                    In top-level insights, the <b className='text-green-800'>information architecture</b> was updated to have a "View more" button
-                    in lieu of both horizontal and vertical scrolling. The data visualizations were organized from <b className='text-green-800'> broad to specific </b>analysis
-                    per region. Custom filters were added to suit user needs. <i>Again, note that the content is largely filler, made in
-                        agreement with the client's asks.
-                    </i>
+                    On this page, users will be able to track their personal data with regards to their waste practices, as well as edit their location and payment methods. We will show <b className='text-green-800'> data</b> and statistics about their <b className='text-green-800'> sustainability impact</b>. Not only does
+                    this encourage users to be sustainable, but they can also share their profiles with friends, family, or to promote their business. <i> We also included the ability for multiple people to create profiles on a singular device, </i> which is important for 
+                    <b className='text-green-800'> user accessibility</b>. For citizens in rural villages, allowing many households to use one device could allow for 
+                    <b className='text-green-800'> greater access to waste management overall</b>.
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
-                        <img src='/projects/discriminology/hifi/map.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/prof1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>map view with heat filter applied</p>
+                        <p className='text-center mt-2'>impact profile for Xerxes</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/toplvl.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/prof2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>top-level insights for an example district</p>
+                        <p className='text-center mt-2'>switching profiles</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/reportsrch.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/prof3.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>ability to search for specific reports</p>
+                        <p className='text-center mt-2'>editing profile location</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/moreinsights.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/prof4.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>user can explore in-depth insights</p>
+                        <p className='text-center mt-2'>editing payment method</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/moremore.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/prof5.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>data organized by specificity and region</p>
+                        <p className='text-center mt-2'>Tracy's statistics</p>
                     </div>
                     <div>
-                        <img src='/projects/discriminology/hifi/Filters.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
+                        <img src='/projects/matanataki/hifi/prof6.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>custom filters for relevant results</p>
-                    </div>
-                </div>
-
-                <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>feature 3: discussion board</h3>
-                <p className='my-4'>
-                    For the final handoff, this feature was prioritized last, since it could be high-effort and medium-low-impact to recreate
-                    a social media system. The final design leveraged user feedback to include options for search based on location and category,
-                    as well as a warning for potential sensitive media linked with posts.
-                    <i>Note that the content is mostly filler.
-                    </i>
-                </p>
-                <div className='grid grid-cols-3 gap-4 sm:px-10'>
-                    <div>
-                        <img src='/projects/discriminology/hifi/hfdiscussion.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>discussion board feed</p>
-                    </div>
-                    <div>
-                        <img src='/projects/discriminology/hifi/sampledisc.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>sample post with tags and media attachments</p>
-                    </div>
-                    <div>
-                        <img src='/projects/discriminology/hifi/sensitive.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
-                ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center mt-2'>sensitive image warning</p>
+                        <p className='text-center mt-2'>in-depth data analytics</p>
                     </div>
                 </div>
 
                 {/* lastly, */}
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-green-800'>finale</h3>
                 <p className='my-4'>
-                    Thanks for making it this far! I'd like to thank Discriminology for giving me the chance to work on an interesting
-                    and high-impact project. These have been handed off for development with their team (in partnership with a dev
-                    team from Tech for Social Good).
+                    Thanks for making it this far! I'd like to thank Matanataki for giving me the chance to work on an interesting
+                    and high-impact project for residents in Fiji! I met so many wonderful people, users, and stakeholders, and learned 
+                    a lot about the UI/UX process.
+                    <b className='text-green-800 font-medium'> These designs have been handed off for development with their team (in partnership with a dev
+                    team from Tech for Social Good)</b>.
 
                 </p>
 
@@ -626,10 +592,10 @@ export default function Home() {
                 <p className='text-2xl text-gray-80 mt-14 mb-8 font-medium text-center'>
                     <Link
                         href='https://drive.google.com/file/d/1MP0-8dL4lN1oUqaoaW_sSjHLXCdOhKNR/view?usp=sharing'
-                        className="group relative font-medium text-green-800 hover:text-green-800 transition duration-300"
+                        className="group relative font-medium text-green-800 hover:text-green-900 transition duration-300"
                         passHref>
                         read the final design report
-                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-900 transition-all duration-200 group-hover:w-full"></span>
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-900 transition-all duration-200 group-hover:w-full"></span>
                     </Link>
                 </p>
             </div>

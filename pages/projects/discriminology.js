@@ -134,7 +134,7 @@ export default function Home() {
                     After prioritizing them based on Discriminology’s need and team bandwidth, we narrowed down our insights to four core pain points in our design:
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 my-8 sm:my-10">
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-blue-700">Inconsistent Data Collection</h3>
