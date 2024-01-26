@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Home() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-6">
+        <div className="flex flex-col items-center justify-center min-h-screen p-6 text-gray-700">
 
             {/* HEADER */}
             <div className='sm:flex sm:flex-row max-w-3xl mt-24'>
@@ -12,8 +12,8 @@ export default function Home() {
                     <h1 className="text-3xl font-bold leading-tight text-blue-900">
                         Discriminology Community Data Platform
                     </h1>
-                    <p className="mt-3 sm:mt-6 text-sm text-gray-700">
-                        A community data platform that democratizes education data for Black and Brown student communities.
+                    <p className="mt-3 sm:mt-6 text-sm ">
+                        A community data platform that democratizes education data for Black and Brown communities.
                     </p>
                 </div>
                 <div className="sm:w-1/2 grid grid-cols-2 gap-1 sm:gap-2 mb-4 sm:mb-0">
@@ -24,15 +24,15 @@ export default function Home() {
             <div className='max-w-3xl bg-gray-200 w-full shadow-lg rounded-lg md:mx-auto mx-3 sm:-mt-20 z-0'>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 shadow-lg">
                     <div className="p-5">
-                        <p className="text-sm font-semibold text-gray-700">skills</p>
+                        <p className="text-sm font-semibold ">skills</p>
                         <p className="text-sm text-gray-600">ux research, product design</p>
                     </div>
                     <div className="p-5">
-                        <p className="text-sm font-semibold text-gray-700">role</p>
+                        <p className="text-sm font-semibold ">role</p>
                         <p className="text-sm text-gray-600">design lead</p>
                     </div>
                     <div className="p-5">
-                        <p className="text-sm font-semibold text-gray-700">year</p>
+                        <p className="text-sm font-semibold ">year</p>
                         <p className="text-sm text-gray-600">2022</p>
                     </div>
                 </div>
@@ -40,15 +40,40 @@ export default function Home() {
 
             {/* upper section */}
             <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 sm:mt-14 mt-8'>
+
+                <div className='grid grid-cols-2 sm:grid-cols-4 mb-14 gap-8'>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>3</h1>
+                        <p className='font-medium'>months</p>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>5</h1>
+                        <p className='font-medium'>focus groups</p>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>2</h1>
+                        <p className='font-medium'>iterations</p>
+                    </div>
+                    <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
+                ease-in-out transform hover:-translate-y-1 text-center'>
+                        <h1 className='font-semibold text-5xl'>18</h1>
+                        <p className='font-medium'>Figma files</p>
+                    </div>
+                </div>
+
+
                 <h3 className='mb-4 text-xl font-medium text-blue-900'>a partner project between Discriminology and Harvard Tech for Social Good</h3>
-                <p className='text-gray-700 mb-4'>
+                <p className=' mb-4'>
                     A team from Harvard Tech for Social Good was put together to help Discriminology build a new mobile platform.
                 </p>
                 <p>
                     I was the <b className='text-blue-700'>Senior Designer</b> with a team of 4 designers. Our process consisted of:
                 </p>
                 <ul className="list-disc list-inside mx-6">
-                    <li className='my-1'>7 focus group interviews</li>
+                    <li className='my-1'>5 focus group interviews</li>
                     <li className='mb-1'>Affinity mapping and identifying pain points</li>
                     <li className='mb-1'>Feature lists and feature flows</li>
                     <li className='mb-1'>Midpoint feedback session with the founders</li>
@@ -95,12 +120,12 @@ export default function Home() {
 
                 {/* user research */}
                 <h3 className='mt-12 mb-4 text-xl font-medium text-blue-900'>background research & focus group analysis</h3>
-                <p className='text-gray-700 my-4'>
+                <p className=' my-4'>
                     In the first half of our <b className='text-blue-700'>12-week cycle</b>, we scoped 8 existing reporting, mapping tools,
                     and discussion platforms such as Snapchat, Google Maps, Waze, and Reddit, and reviewed
                     <b className='text-blue-700'> 5 focus group recordings with 12 community leaders</b>, with analysis focused on <b className='text-blue-700'> user-centered design strategies</b>.
                 </p>
-                <p className='text-gray-700 my-4'>
+                <p className=' my-4'>
                     The goal of our focus group analysis was to discover the main <b className='text-blue-700'> behaviors, attitudes, pain points, and goals</b> of each user.
                     Behaviors and pain points allowed us to get a better sense of what does and does not work with the current system,
                     leading to the formulation of goals that we would try to incorporate into our new system designs.
@@ -114,7 +139,7 @@ export default function Home() {
 
                 {/* affinity group analysis */}
                 <h3 className='mt-10 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>affinity group analysis</h3>
-                <p className='text-gray-700 my-4'>
+                <p className=' my-4'>
                     In our affinity mapping process, we synthesized those insights into a visualization of pain points and goals to guide our designs.
                     This process of analyzing qualitative data involved writing down quotes and main takeaways from our focus group analyses and categorizing them into more general pain points.
                 </p>
@@ -129,12 +154,12 @@ export default function Home() {
 
                 {/* KEY INSIGHTS */}
                 <h3 className='mt-10 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>key insights & pain points</h3>
-                <p className='text-gray-700 my-4'>
+                <p className=' my-4'>
                     Through our user research and affinity mapping, we categorized the <b className='text-blue-700'>pain points</b> into areas of focus: <i>collecting data, data analysis, sharing data with the community, and promoting community activism,</i> among others.
                     After prioritizing them based on Discriminology’s need and team bandwidth, we narrowed down our insights to four core pain points in our design:
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 my-8 sm:my-10">
                     <div className='p-4 bg-gray-100 rounded-md shadow-md hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'>
                         <h3 className="font-bold mb-3 text-blue-700">Inconsistent Data Collection</h3>
@@ -165,10 +190,10 @@ export default function Home() {
                     </div>
                 </div>
 
-                <p className='text-gray-700 mt-6'>
+                <p className=' mt-6'>
                     There were also a couple other general pain points users mentioned:
                 </p>
-                <ul className='list-disc list-inside mx-8 text-gray-700'>
+                <ul className='list-disc list-inside mx-8 '>
                     <li className='my-2'>
                         <b className='text-blue-700'>Tech-Averse Attitudes</b>: Several users described a lack of formal training while onboarding new tech tools, and teaching people to use
                         new tools can be expensive and ultimately not user-friendly. Users also mentioned a digital literacy gap in the knowledge that organizers may have in maximizing the
@@ -193,7 +218,7 @@ export default function Home() {
             </div>
 
             {/* IDEATION */}
-            <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 text-gray-700'>
+            <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 '>
                 <h3 className='text-3xl font-medium text-blue-900 text-center'>Weeks 4-8: Ideation.</h3>
 
                 {/* ideation */}
@@ -202,19 +227,19 @@ export default function Home() {
                     Based on these pain points, we determined the top features in our scope:
                 </p>
                 <ul className='list-disc list-inside mx-8 font-medium'>
-                        <li className='my-2'>
-                            <b className='text-blue-700'>A reporting database</b> to track and report instances of discrimination
-                            or police presence at schools.
-                        </li>
-                        <li className='my-2'>
-                            <b className='text-blue-700'>A heat mapping tool leading into top-level regional insights</b>, which
-                            allows students and organizers to monitor trends based on geographic cluster.
-                        </li>
-                        <li className='my-2'>
-                            <b className='text-blue-700'>A local discussion board</b> for all community members to engage on discussion
-                            topics and allow organizers to connect with individuals.
-                        </li>
-                    </ul>
+                    <li className='my-2'>
+                        <b className='text-blue-700'>A reporting database</b> to track and report instances of discrimination
+                        or police presence at schools.
+                    </li>
+                    <li className='my-2'>
+                        <b className='text-blue-700'>A heat mapping tool leading into top-level regional insights</b>, which
+                        allows students and organizers to monitor trends based on geographic cluster.
+                    </li>
+                    <li className='my-2'>
+                        <b className='text-blue-700'>A local discussion board</b> for all community members to engage on discussion
+                        topics and allow organizers to connect with individuals.
+                    </li>
+                </ul>
                 <p className='my-4'>
                     We determined that these features would address the most urgent needs noted by Discriminology
                     and community organizers. This ideal system builds a focus on several main pain points that were
@@ -248,32 +273,32 @@ export default function Home() {
                     <div>
                         <img src='/projects/discriminology/lofi/report1.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center text-gray-700 mt-2'>placeholders in low fidelity prototype</p>
+                        <p className='text-center  mt-2'>placeholders in low fidelity prototype</p>
                     </div>
                     <div>
                         <img src='/projects/discriminology/lofi/report2.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center text-gray-700 mt-2'>simple, multiple choice</p>
+                        <p className='text-center  mt-2'>simple, multiple choice</p>
                     </div>
                     <div>
                         <img src='/projects/discriminology/lofi/report3privacy.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center text-gray-700 mt-2'>privacy preferences to help students feel comfortable</p>
+                        <p className='text-center  mt-2'>privacy preferences to help students feel comfortable</p>
                     </div>
                     <div>
                         <img src='/projects/discriminology/lofi/report5status.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center text-gray-700 mt-2'>report submitted, but follow-up questionnaire needed</p>
+                        <p className='text-center  mt-2'>report submitted, but follow-up questionnaire needed</p>
                     </div>
                     <div>
                         <img src='/projects/discriminology/lofi/report6notif.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center text-gray-700 mt-2'>notification for qualitative details</p>
+                        <p className='text-center  mt-2'>notification for qualitative details</p>
                     </div>
                     <div>
                         <img src='/projects/discriminology/lofi/report7.png' className='border-2 border-gray-400 rounded-lg hover:shadow-xl transition duration-300 
                 ease-in-out transform hover:-translate-y-1'/>
-                        <p className='text-center text-gray-700 mt-2'>open-ended questions</p>
+                        <p className='text-center  mt-2'>open-ended questions</p>
                     </div>
                 </div>
 
@@ -400,7 +425,7 @@ export default function Home() {
             </div>
 
             {/* FINAL DESIGN SOLUTION */}
-            <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 text-gray-700'>
+            <div className='max-w-3xl w-full p-4 md:mx-auto mx-3 '>
                 <h3 className='text-3xl font-medium text-blue-900 text-center'>Weeks 8-12: Final Design Solution.</h3>
                 {/* description */}
                 <p className='mt-10'>
@@ -516,9 +541,9 @@ export default function Home() {
                     In this version, the map is more visual and realistic, with more intuitive integration with top-level insights.
                     In top-level insights, the <b className='text-blue-700'>information architecture</b> was updated to have a "View more" button
                     in lieu of both horizontal and vertical scrolling. The data visualizations were organized from <b className='text-blue-700'> broad to specific </b>analysis
-                     per region. Custom filters were added to suit user needs. <i>Again, note that the content is largely filler, made in 
+                    per region. Custom filters were added to suit user needs. <i>Again, note that the content is largely filler, made in
                         agreement with the client's asks.
-                     </i>
+                    </i>
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
@@ -555,11 +580,11 @@ export default function Home() {
 
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>feature 3: discussion board</h3>
                 <p className='my-4'>
-                    For the final handoff, this feature was prioritized last, since it could be high-effort and medium-low-impact to recreate 
-                    a social media system. The final design leveraged user feedback to include options for search based on location and category, 
+                    For the final handoff, this feature was prioritized last, since it could be high-effort and medium-low-impact to recreate
+                    a social media system. The final design leveraged user feedback to include options for search based on location and category,
                     as well as a warning for potential sensitive media linked with posts.
-                     <i>Note that the content is mostly filler.
-                     </i>
+                    <i>Note that the content is mostly filler.
+                    </i>
                 </p>
                 <div className='grid grid-cols-3 gap-4 sm:px-10'>
                     <div>
@@ -582,8 +607,8 @@ export default function Home() {
                 {/* lastly, */}
                 <h3 className='mt-12 sm:mt-16 mb-4 text-xl font-medium text-blue-900'>finale</h3>
                 <p className='my-4'>
-                    Thanks for making it this far! I'd like to thank Discriminology for giving me the chance to work on an interesting 
-                    and high-impact project. These have been handed off for development with their team (in partnership with a dev 
+                    Thanks for making it this far! I'd like to thank Discriminology for giving me the chance to work on an interesting
+                    and high-impact project. These have been handed off for development with their team (in partnership with a dev
                     team from Tech for Social Good).
 
                 </p>
