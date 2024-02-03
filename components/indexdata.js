@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export const lifeUpdates = {
     title: "life updates",
-    date: '12/21/2023',
-    content: 'back in Vegas! focusing on self care. exploring interesting classes for my last semester. brainstorming personal projects. trying to read more and keep up with my favorite podcasts.'
+    date: '02/03/2024',
+    content: 'back in Cambridge! taking some cool classes this last semester, trying to read more books, and take care of myself. looking for genuinely exciting post-grad plans.'
 };
 
 export const workUpdates = {
