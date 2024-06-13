@@ -1,7 +1,7 @@
 import '../tailwind.config'
 import { RiMentalHealthFill } from "react-icons/ri";
 import { GiNigeria } from "react-icons/gi";
-import { PiHeartbeatThin } from "react-icons/pi";
+import { PiGraphLight, PiHeartbeatThin } from "react-icons/pi";
 import { FaTwitter } from "react-icons/fa";
 
 export const productDesign = [
@@ -45,10 +45,18 @@ export const quantitativeSociologyReports = [
 
 export const engineeringReports = [
     {
+        title: "Venmo Visualizations: Privacy Implications of Venmo’s Default Settings",
+        description: "using network analysis to expose privacy implications of Venmo's default public settings",
+        Icon: PiGraphLight,
+        link: "https://medium.com/@sherryliu2002/a-brief-social-network-analysis-using-venmos-api-plus-privacy-related-concerns-e8003a04a1d2",
+        tags:'social network analysis, privacy, python',
+    },
+    {
         title: "The Pulse of Pressure: Analysis of HRV Data for Stress Detection",
         description: "using electrocardiogram (ECG) data to visualize and detect different levels of stress via various classifiers",
         Icon: PiHeartbeatThin,
         link: "https://drive.google.com/file/d/1HN0hxJW4QCL6aYMyT_ymVNQGixo7h-G1/view?usp=sharing",
         tags:'PCA/LDA, classification, python',
     },
+
 ];

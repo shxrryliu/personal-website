@@ -4,25 +4,14 @@ import Link from 'next/link';
 export const lifeUpdates = {
     title: "life updates",
     date: '02/03/2024',
-    content: 'back in Cambridge! taking some cool classes this last semester, trying to read more books, and take care of myself. looking for genuinely exciting post-grad plans.'
+    content: 'back in Las Vegas :) am reading, sleeping, moving, spending time with family. trying to gain more control over my attention span and spark my creativity.'
 };
 
 export const workUpdates = {
     title: "work updates",
     current: (
         <p>
-            finishing my degree in Applied Mathematics in Sociology{' '}
-            {/* incoming product manager @ Microsoft,  */}
-            and a teaching fellow for Harvard's{' '}
-            <Link
-                href="https://canvas.harvard.edu/courses/123847/assignments/syllabus"
-                className="group relative text-red-700 hover:text-red-900 transition duration-300"
-                passHref
-            >
-                technology & privacy class
-                {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span> */}
-            </Link>
-            .
+            finished my degree in Applied Mathematics in Sociology and incoming to IXL Learning as an APM. looking for volunteer/part-time opportunities between law x tech.
         </p>
     ),
     previous: (
