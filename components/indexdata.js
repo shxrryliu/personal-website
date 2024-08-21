@@ -3,20 +3,21 @@ import Link from 'next/link';
 
 export const lifeUpdates = {
     title: "life updates",
-    date: '02/03/2024',
-    content: 'back in Las Vegas :) am reading, sleeping, moving, spending time with family. trying to gain more control over my attention span and spark my creativity.'
+    date: '08/20/2024',
+    content: 'moved to the Bay Area to start work (say hi!). looking for adventures, friends, hobbies, personal projects to fill my time. learning more about the intersection of tech and society.'
 };
 
 export const workUpdates = {
     title: "work updates",
     current: (
         <p>
-            finished my degree in Applied Mathematics in Sociology and incoming to IXL Learning as an APM. looking for volunteer/part-time opportunities between law x tech.
+            working on creating better, smarter education technology as an APM @ IXL Learning. thinking about volunteer/part-time opportunities between law x tech.
         </p>
     ),
     previous: (
         <p>
-            product manager intern @ Microsoft, 
+            graduated w/ a degree in Applied Math in Sociology. also:
+            PM intern @ Microsoft, 
             director of product research & design @ {' '}
             <Link
                 href="https://socialgood.hcs.harvard.edu/"
@@ -26,9 +27,7 @@ export const workUpdates = {
                 tech for social good
                 {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span> */}
             </Link>
-            , software
-            engineer intern @ Neeva (now Snowflake), product development intern @
-            Companion Home.
+            , SWE intern @ Neeva. 
         </p>
     ),
 };

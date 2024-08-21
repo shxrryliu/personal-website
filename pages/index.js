@@ -151,11 +151,11 @@ export default function Home() {
 
           {/* them buttons */}
           <div className='flex flex-col sm:flex-row items-center justify-center sm:space-x-10 space-y-6 sm:space-y-0'>
-            <a href="mailto:sliu@college.harvard.edu"
+            <a href="mailto:sherryliu2002@gmail.com"
               className="flex items-center justify-center bg-gray-100 rounded-full py-2 w-72 text-center shadow-lg 
               hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 space-x-2">
               <FaRegEnvelope className='text-gray-700 hover:text-gray-900' />
-              <span className='text-sm text-gray-700 hover:text-gray-900'>sliu@college.harvard.edu</span>
+              <span className='text-sm text-gray-700 hover:text-gray-900'>sherryliu2002@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/sherry-liu-0183a7167/"
               className="flex items-center justify-center bg-gray-100 rounded-full py-2 w-72 text-center shadow-lg 
