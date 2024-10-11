@@ -26,14 +26,7 @@ export default function Home() {
                 </div>
                 <div className='sm:w-1/2 my-6 sm:my-auto'>
                     <p className='text-xl font-semibold pb-4 sm:pb-10 text-gray-800'>i’m a senior @ Harvard interested in social science, design, and technology.</p>
-                    <p className='text-med text-gray-700'>i’m also the eldest daughter of two Chinese immigrants and from Las Vegas (
-                        <a
-                            href="https://www.bbc.com/news/world-us-canada-67642512"
-                            className="group relative text-red-700 hover:text-red-900 transition duration-300"
-                        >
-                            #unlvstrong
-                            {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-700 transition-all duration-200 group-hover:w-full"></span> */}
-                        </a>). i love houseplants, dark chocolate, and my favorite color is dark red.</p>
+                    <p className='text-med text-gray-700'>i’m also the eldest daughter of two Chinese immigrants and from Las Vegas. i love houseplants, dark chocolate, and my favorite color is dark red.</p>
                 </div>
             </div>
 
