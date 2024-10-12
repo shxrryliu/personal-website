@@ -25,7 +25,7 @@ export default function Home() {
                     <p className="text-center text-xs mt-2 text-gray-600">me on film.</p>
                 </div>
                 <div className='sm:w-1/2 my-6 sm:my-auto'>
-                    <p className='text-xl font-semibold pb-4 sm:pb-10 text-gray-800'>i’m a senior @ Harvard interested in social science, design, and technology.</p>
+                    <p className='text-xl font-semibold pb-4 sm:pb-10 text-gray-800'>i’m a product manager interested in social science, design, and technology.</p>
                     <p className='text-med text-gray-700'>i’m also the eldest daughter of two Chinese immigrants and from Las Vegas. i love houseplants, dark chocolate, and my favorite color is dark red.</p>
                 </div>
             </div>
@@ -38,12 +38,12 @@ export default function Home() {
             {/* values section */}
             <div className='text-left max-w-3xl p-4 md:mx-auto mx-3'>
                 <p className='text-xl font-medium pb-4 sm:pb-8 text-gray-800'>if you’re also interested in ethical tech, let’s collab!</p>
-                <p className='text-med pb-4 text-gray-700'>i believe that innovation is exciting for its own sake, but tech is always situated in its social context.
-                    as designers/developers, it is our responsibility to advance the interest of the underprivileged and minimize unfair exploitation.
+                <p className='text-med pb-4 text-gray-700'>always happy to connect with people hoping to make the world a better place.
+                    if you're looking for a product manager, designer, or sounding board, don't hesitate to reach out!
                 </p>
-                <p className='text-med text-gray-700'>as a quantitative social scientist, i think that data should be leveraged to hold those in power accountable.
+                {/* <p className='text-med text-gray-700'>as a quantitative social scientist, i think that data should be leveraged to hold those in power accountable.
                     together, let’s strive for better.
-                </p>
+                </p> */}
             </div>
 
             {/* divider */}

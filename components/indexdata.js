@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 export const lifeUpdates = {
     title: "life updates",
-    date: '08/20/2024',
-    content: 'moved to the Bay Area to start work (say hi!). looking for adventures, friends, hobbies, personal projects to fill my time. learning more about the intersection of tech and society.'
+    date: '10/11/2024',
+    content: 'moved to the Bay Area to start work. growing an herb garden, reading books, trying to read more. learning more about the intersection of tech x society.'
 };
 
 export const workUpdates = {
     title: "work updates",
     current: (
         <p>
-            working on creating better, smarter education technology as an APM @ IXL Learning. thinking about volunteer/part-time opportunities between law x tech.
+            working on creating better, smarter ed tech as an APM @ IXL Learning. reaching out about volunteer/part-time opportunities between law x tech.
         </p>
     ),
     previous: (

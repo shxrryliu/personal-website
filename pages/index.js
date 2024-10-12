@@ -4,7 +4,8 @@ import { useEffect, useState, useRef, React } from 'react';
 import { useRouter } from 'next/router';
 import { lifeUpdates, workUpdates, featuredProjects } from '../components/indexdata';
 import ProjectCard from '../components/projectcard';
-import { FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa';
+import { SiSubstack } from "react-icons/si";
 
 
 export default function Home() {
@@ -71,13 +72,13 @@ export default function Home() {
           transition duration-300 ease-in-out transform hover:-translate-y-1">
           <FaGithub size={30} />
         </a>
-        <a href="https://www.instagram.com/sherryliuser/" aria-label="Instagram" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
-          transition duration-300 ease-in-out transform hover:-translate-y-1">
-          <FaInstagram size={30} />
-        </a>
         <a href="https://www.linkedin.com/in/sherry-liu-0183a7167/" aria-label="LinkedIn" className="text-gray-500 hover:text-red-700 hover:drop-shadow-md
           transition duration-300 ease-in-out transform hover:-translate-y-1">
           <FaLinkedin size={30} />
+        </a>
+        <a href="https://sherryliuser.substack.com/" aria-label="Instagram" className="mt-1 text-gray-500 hover:text-red-700 hover:drop-shadow-md
+          transition duration-300 ease-in-out transform hover:-translate-y-1">
+          <SiSubstack size={25} />
         </a>
       </div>
 
