@@ -2,12 +2,12 @@ import '../tailwind.config'
 import { FaInstagram, FaGoodreads, FaSpotify } from 'react-icons/fa';
 
 const sideQuests = [
-    { imgPath: '../sidequests/half.jpg', description: 'ran a half marathon' },
-    { imgPath: '../sidequests/portugal.jpg', description: 'traveled to portugal' },
-    { imgPath: '../sidequests/seoul.png', description: 'played dress up (in seoul, sk)' },
-    { imgPath: '../sidequests/whidbey.jpg', description: 'went to whidbey island' },
-    { imgPath: '../sidequests/birthday.jpg', description: 'turned 21' },
-    { imgPath: '../sidequests/china.png', description: 'went to the motherland (中国)' },
+    { imgPath: '../sidequests/grad.jpg', description: 'graduated!' },
+    { imgPath: '../sidequests/istanbul.jpg', description: 'traveled to istanbul' },
+    { imgPath: '../sidequests/kitty.jpg', description: 'rescued a tiny kitten in beijing' },
+    { imgPath: '../sidequests/sf.jpg', description: 'moved to the bay area' },
+    { imgPath: '../sidequests/job.jpg', description: 'started working full-time' },
+    { imgPath: '../sidequests/sub.jpg', description: 'picked up a hobby (substack)'},
 ]
 
 
@@ -53,7 +53,7 @@ export default function Home() {
 
             {/* side quests */}
             <div className='max-w-3xl w-full p-4 md:mx-auto mx-3'>
-                <p className='text-xl pb-4 sm:pb-8 text-left text-gray-800'>a few side quests from 2023</p>
+                <p className='text-xl pb-4 sm:pb-8 text-left text-gray-800'>a few side (and main) quests from 2024</p>
                 <div className='grid md:grid-cols-3 grid-cols-2 gap-10 mb-8 mx-3'>
                     {sideQuests.map((quest, index) => (
                         <div key={index}>
