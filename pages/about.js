@@ -7,7 +7,7 @@ const sideQuests = [
     { imgPath: '../sidequests/kitty.jpg', description: 'rescued a tiny kitten in beijing' },
     { imgPath: '../sidequests/sf.jpg', description: 'moved to the bay area' },
     { imgPath: '../sidequests/job.jpg', description: 'started working full-time' },
-    { imgPath: '../sidequests/sub.jpg', description: 'picked up a hobby (substack)'},
+    { imgPath: '../sidequests/sub.jpg', description: 'picked up a hobby (substack)', link: 'https://sherryliuser.substack.com/' },
 ]
 
 
@@ -25,8 +25,8 @@ export default function Home() {
                     <p className="text-center text-xs mt-2 text-gray-600">me on film.</p>
                 </div>
                 <div className='sm:w-1/2 my-6 sm:my-auto'>
-                    <p className='text-xl font-semibold pb-4 sm:pb-10 text-gray-800'>i’m a product manager interested in social science, design, and technology.</p>
-                    <p className='text-med text-gray-700'>i’m also the eldest daughter of two Chinese immigrants and from Las Vegas. i love houseplants, dark chocolate, and my favorite color is dark red.</p>
+                    <p className='text-xl font-semibold pb-4 sm:pb-10 text-gray-800'>i'm a product manager interested in social science, design, and technology.</p>
+                    <p className='text-med text-gray-700'>i'm also the eldest daughter of two Chinese immigrants and from Las Vegas. i love houseplants, dark chocolate, and my favorite color is dark red.</p>
                 </div>
             </div>
 
@@ -37,12 +37,12 @@ export default function Home() {
 
             {/* values section */}
             <div className='text-left max-w-3xl p-4 md:mx-auto mx-3'>
-                <p className='text-xl font-medium pb-4 sm:pb-8 text-gray-800'>if you’re also interested in ethical tech, let’s collab!</p>
+                <p className='text-xl font-medium pb-4 sm:pb-8 text-gray-800'>if you're also interested in ethical tech, let's collab!</p>
                 <p className='text-med pb-4 text-gray-700'>always happy to connect with people hoping to make the world a better place.
                     if you're looking for a product manager, designer, or sounding board, don't hesitate to reach out!
                 </p>
                 {/* <p className='text-med text-gray-700'>as a quantitative social scientist, i think that data should be leveraged to hold those in power accountable.
-                    together, let’s strive for better.
+                    together, let's strive for better.
                 </p> */}
             </div>
 
@@ -53,12 +53,19 @@ export default function Home() {
 
             {/* side quests */}
             <div className='max-w-3xl w-full p-4 md:mx-auto mx-3'>
-                <p className='text-xl pb-4 sm:pb-8 text-left text-gray-800'>a few side (and main) quests from 2024</p>
+                <p className='text-xl pb-4 sm:pb-8 text-left text-gray-800'>a few side (and main) quests from 2024:</p>
                 <div className='grid md:grid-cols-3 grid-cols-2 gap-10 mb-8 mx-3'>
                     {sideQuests.map((quest, index) => (
                         <div key={index}>
-                            <img src={quest.imgPath} alt={quest.description} className='w-full rounded-lg md:h-52 h-44 bg-gray-200 object-cover
-                                hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden' />
+                            {quest.link ? (
+                                <a href={quest.link} target="_blank" rel="noopener noreferrer">
+                                    <img src={quest.imgPath} alt={quest.description} className='w-full rounded-lg md:h-52 h-44 bg-gray-200 object-cover
+                                        hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden' />
+                                </a>
+                            ) : (
+                                <img src={quest.imgPath} alt={quest.description} className='w-full rounded-lg md:h-52 h-44 bg-gray-200 object-cover
+                                    hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden' />
+                            )}
                             <p className='text-center text-sm mt-2 text-gray-600'>{quest.description}</p>
                         </div>
                     ))}
