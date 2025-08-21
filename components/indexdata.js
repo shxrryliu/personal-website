@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export const lifeUpdates = {
     title: "life updates",
-    date: '10/11/2024',
-    content: 'moved to the Bay Area to start work. growing an herb garden, reading books, trying to read more. learning more about the intersection of tech x society.'
+    date: '08/21/2025',
+    content: 'moved to sf! launching impactful projects in edtech, relearning the guitar, and thinking deeply about work and fulfillment. trying to navigate uncertainty with humor!'
 };
 
 export const workUpdates = {
